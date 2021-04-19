@@ -1,4 +1,4 @@
-<div style="text-align:center"> <span style="color:white; font-size:3.4em;"> 100 Days of Data Science<span></div>
+<div style="text-align:center"> <span style="color:black; font-size:3.4em;"> 100 Days of Data Science<span></div>
 
 <br>
 
