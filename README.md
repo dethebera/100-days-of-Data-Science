@@ -103,12 +103,14 @@ This is Khan Academy's finest. There are practice tests... Go and ace it!
 We have the materials now and let's look over at the schedule.
 The schedule is being provided for beginners the ones who are already feeling confident on the topics do not go easy on yourself. A little revision would not hurt. **100days** 🔥
 <br>
-|   Day/Days       |  Hours                                        |
-| -----------      | -----------                                   |
-|  11-12           |   2 hours each (Sql From start)               |
-| 13-18            | 2 hours each (SQL Tutorial for Data Analysis) |
-| 19-20 (Optional) |  Querying and managing data                   |
 
+|  Day/Days        |  Hours                                        |
+| -----------      | ----------------                              |
+| 11-12            | 2 hours each (Sql From start)                 |
+| 13-18            | 2 hours each (SQL Tutorial for Data Analysis) |
+| 19-20 (Optional) | Querying and managing data                    |
+
+<br>
 Now the last is optional if you are able to complete the rest in time. 
 
 <br>
@@ -134,10 +136,11 @@ This amazing 7 hour course is taught by PHD from Stanford for FREE! I know right
 We have the materials now and let's look over at the schedule.
 The schedule is being provided for beginners the ones who are already feeling confident on the topics do not go easy on yourself. A little revision would not hurt. **100days** 🔥
 <br>
-|   Day/Days      | Hours  |
-| -----------| ----------- |
-|  22       |   2 hours (Stats-1)   |
-| 23-25 | 7 hours At your own pace (Stats-2) |
+
+|   Day/Days | Hours                              |
+| ---------- | -----------                        |
+|  22        |   2 hours (Stats-1)                |
+| 23-25      | 7 hours At your own pace (Stats-2) |
 
 <br>
 
