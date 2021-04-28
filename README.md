@@ -38,33 +38,18 @@ That's it for DaY 1! Prep yourselves we will be starting from tmr... by then I w
 
 # Day 2 to 10  - Programming for DS (Basic)
 
-<span style="color:orange">If you are already well versed in python. I would still suggest you to complete [this](https://www.kaggle.com/learn/python) course which is free and will help you warmup for the journey ahead. 
+If you are already well versed in python. I would still suggest you to complete [this](https://www.kaggle.com/learn/python) course which is free and will help you warmup for the journey ahead. 
 
 Now, If you have no clue about python and how to get started well no worries, there are plently of resources online and I'll  set you on the right path. Let's get started.
 
 - Python Basics with Kaggle - [LINK](https://www.kaggle.com/learn/python) - 4 Hours.<br>
-<span style="background: #609c8d;
-        color: white;
-        font-family: Helvetica;
-        font-size: 12px;
-        padding: 6px 12px;
-        margin-bottom: 0px;">This link is from Kaggle. If you know any other languages like C / C++ / Java then python should'nt be hard to get started with. The above link will take almost 4 hours to get complete even if you are a begineer in python. 
+This link is from Kaggle. If you know any other languages like C / C++ / Java then python should'nt be hard to get started with. The above link will take almost 4 hours to get complete even if you are a begineer in python. 
 
 - Python for Data Science - [LINK](https://www.youtube.com/watch?v=LHBE6Q9XlzI) - 12 Hours<br>
-<span style="background: #609c8d;
-        color: white;
-        font-family: Helvetica;
-        font-size: 12px;
-        padding: 6px 12px;
-        margin-bottom: 0px;"> Freecodecamp's one of the best free resources and here we leverage their amazing 12 hour video for absolute beginners to get started with their journey. 
+ Freecodecamp's one of the best free resources and here we leverage their amazing 12 hour video for absolute beginners to get started with their journey. 
 
-- Python Basics - Start from 0 - [Link](https://www.youtube.com/watch?v=z2k9Jh3jDVU&list=PLWKjhJtqVAbkmRvnFmOd4KhDdlK1oIq23) - 2 Hours <br> -
-<span style="background: #609c8d;
-        color: white;
-        font-family: Helvetica;
-        font-size: 12px;
-        padding: 6px 12px;
-        margin-bottom: 0px;"> Now if none of these links help you and you still dont understand.... Dont worry! We still got you covered. Here's this amazing video for everyone starting right from 0.
+- Python Basics - Start from 0 - [Link](https://www.youtube.com/watch?v=z2k9Jh3jDVU&list=PLWKjhJtqVAbkmRvnFmOd4KhDdlK1oIq23) - 2 Hours <br> 
+ Now if none of these links help you and you still dont understand.... Dont worry! We still got you covered. Here's this amazing video for everyone starting right from 0.
 
 
 
