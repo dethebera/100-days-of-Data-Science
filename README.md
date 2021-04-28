@@ -1,11 +1,9 @@
-<div style="text-align:center"> <span style="color:black; font-size:3.4em;"> 100 Days of Data Science<span></div>
-
 <br>
 
 ___________
 __________
 
-### <span style="color:orange"> This is the complete module you will need to get started with 100 days of Data Science by 100 days Official.
+### This is the complete module you will need to get started with 100 days of Data Science by 100 days Official.
 
 ________
 ____________
@@ -19,12 +17,7 @@ ____________
 <br>
 <br>
 
-<span style="color:orange ; background-color: #c22d2d;
-        color: white;
-        font-family: Helvetica;
-        font-size: 25px;
-        padding: 6px 12px;
-        margin-bottom: 5px;">Day 1 - Installing the Tools
+# Day 1 - Installing the Tools
 
 Now this there isn't a fixed ide that you can gets your hand dirty with. But the best two are - 
 - [Anaconda](https://www.anaconda.com/products/individual) 
@@ -32,12 +25,7 @@ Now this there isn't a fixed ide that you can gets your hand dirty with. But the
 
 Keep in mind that here we are taking the more "Traditional" approach of learning Data Science with **Python**, if you feel like working with R, that is amazing go ahead and download [R Studio](https://www.rstudio.com).
 
-<span style="background: #609c8d;
-        color: white;
-        font-family: Helvetica;
-        font-size: 12px;
-        padding: 6px 12px;
-        margin-bottom: 0px;">Also... for windows users here is the [link](https://www.youtube.com/watch?v=AKVRkB0fot0) to get you started with the installation.
+### Also... for windows users here is the [link](https://www.youtube.com/watch?v=AKVRkB0fot0) to get you started with the installation.
 
 
 That's it for DaY 1! Prep yourselves we will be starting from tmr... by then I would suggest you all to go thru few tutorials and get familiar with the environment. Anaconda is a full data science package and unlike VS Code you dont have to install anything else. VS Code on the other hand takes very little efforts to setup and a little time to get used to, but once done it works like a charm and I use it as a one stop for all coding projects and building websites. Below is the link that should help you setup
@@ -48,13 +36,7 @@ That's it for DaY 1! Prep yourselves we will be starting from tmr... by then I w
 <br>
 <br>
 
-
-<span style="color:orange ; background-color: #c22d2d;
-        color: white;
-        font-family: Helvetica;
-        font-size: 25px;
-        padding: 6px 12px;
-        margin-bottom: 5px;">Day 2 to 10  - Programming for DS (Basic)
+# Day 2 to 10  - Programming for DS (Basic)
 
 <span style="color:orange">If you are already well versed in python. I would still suggest you to complete [this](https://www.kaggle.com/learn/python) course which is free and will help you warmup for the journey ahead. 
 
