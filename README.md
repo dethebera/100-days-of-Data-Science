@@ -3,15 +3,22 @@
 ___________
 __________
 
-### This is the complete module you will need to get started with 100 days of Data Science by 100 days Official.
+## Remember
+Each day you will be sharing your progress as  (example) Day 1/100 - Installing The tools and sharing what you learned and your experience either on LinkedIn or twitter and taggin [our page](https://www.linkedin.com/company/100daysofficial) <br>
+**Do not** forget to use #hastags - 
+- [#100days]
+- [#100daysofficial]
+- [#100daysoflearning]
+- [#100daysofds] 
+
+<br>
+This is essential for you as you get to keep a track of your progress and us to stick to our motto for democratizing free learning and increasing our reach so more students get to use these curated pathways to kickstart their jouney in various fields. 
 
 ________
 ____________
 
 <br>
 
-**There are no prerequisites as such to get started.**
-**Also keep in mind that this coure had been curated for absolute begineers if you haven't seen already (Day 1 - Installing required tools/Ide's)**
 
 <br>
 <br>
@@ -50,6 +57,7 @@ This link is from Kaggle. If you know any other languages like C / C++ / Java th
 
 - Python Basics - Start from 0 - [Link](https://www.youtube.com/watch?v=z2k9Jh3jDVU&list=PLWKjhJtqVAbkmRvnFmOd4KhDdlK1oIq23) - 2 Hours <br> 
  Now if none of these links help you and you still dont understand.... Dont worry! We still got you covered. Here's this amazing video for everyone starting right from 0.
+
 
 
 
