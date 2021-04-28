@@ -73,9 +73,9 @@ So we have a lot to work with... yeah? Here...we are planning to utilize 2 hours
 
 |   Day/Days      | Hours  |
 | -----------| ----------- |
-|  1         |   2 hours (start form 0)   |
-| 2 to 6 | 2 hours each day (freecodecamp)      |
-| 7 - 8  |  2 hours each for Kaggle
+|  2         |   2 hours (start form 0)   |
+| 3 to 8 | 2 hours each day (freecodecamp)      |
+| 9 to 10   |  2 hours each for Kaggle
 
 <br>
 <br>
@@ -97,30 +97,52 @@ This is Khan Academy's finest. There are practice tests... Go and ace it!
 - [SQL Tutorial for Data Analysis](https://mode.com/sql-tutorial/introduction-to-sql/)<br> **Note**: This is the most important of the lot, as we have just 100 Days, we need to know what a particular topic is and what it is used for in a certain area. Here, we are focusing on **SQL for Data Science**. This link has 3 subparts (basic, intermediate, advanced). Check the image below.
 ![pic](/sqltut.png)
 <br>
-<br>
 
 ### Schedule
 
 We have the materials now and let's look over at the schedule.
 The schedule is being provided for beginners the ones who are already feeling confident on the topics do not go easy on yourself. A little revision would not hurt. **100days** 🔥
-
-**For Beginners** (Using All 3 links)
-
-
+<br>
 |   Day/Days      | Hours  |
 | -----------| ----------- |
-|  1-2        |   2 hours each (Sql From start)   |
-| 3-8 | 2 hours each (SQL Tutorial for Data Analysis)      |
-| 9-10 (Optional) |  Querying and managing data |
+|  11-12        |   2 hours each (Sql From start)   |
+| 13-18 | 2 hours each (SQL Tutorial for Data Analysis)      |
+| 19-20 (Optional) |  Querying and managing data |
 
 Now the last is optional if you are able to complete the rest in time. 
 
 <br>
 <br>
 
+# Day 22 to 25  - Statistics for DataScience
+Okay...Now you might be thinking what in the world is going ... SQL then Stats!.... **lemme tell you from my experience of two specializations and ton of courses.** "STATS IS GOD". You heard me right it's way important to understand the use of statistics in data science and why it is important. 
+
+If you are getting started with stats for data science here is a great article to just read about the use of stats and the various approaches. [Link](https://www.freecodecamp.org/news/statistics-for-data-science/).
+
+Now let's start with the videos that will surely help you get started ->
+- [Stats-1](https://www.youtube.com/watch?v=ua-CiDNNj30&list=PLWKjhJtqVAblQe2CCWqV4Zy3LY01Z8aF1&index=1&t=17043s) - 1 Hour<br>
+This directly starts from 4th hour of the video which is 6 hours long as we only need to focus on the stats part. 
+- [Stats-2](https://www.youtube.com/watch?v=Vfo5le26IhY) - 7 Hours<br>
+This amazing 7 hour course is taught by PHD from Stanford for FREE! I know right? This covers almost all topics to get well versed in the subject
+
+**Remember** You will need additional resources that you find while researching on your own after you are done with 100days obviously. 
+<br>
 
 
+### Schedule
 
+We have the materials now and let's look over at the schedule.
+The schedule is being provided for beginners the ones who are already feeling confident on the topics do not go easy on yourself. A little revision would not hurt. **100days** 🔥
+<br>
+|   Day/Days      | Hours  |
+| -----------| ----------- |
+|  22       |   2 hours (Stats-1)   |
+| 23-25 | 7 hours At your own pace (Stats-2) |
+
+<br>
+
+# Day 22 to 25  - Statistics for DataScience
+Okay...Now you might be thinking what in the world is going ... SQL then Stats!.... **lemme tell you from my experience of two specializations and ton of courses.** "STATS IS GOD". You heard me right it's way important to understand the use of statistics in data science and why it is important. 
 
 
 
