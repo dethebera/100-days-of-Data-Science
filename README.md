@@ -71,11 +71,11 @@ Given that there is no fixed way that one might use the above links let's sort t
 
 So we have a lot to work with... yeah? Here...we are planning to utilize 2 hours from your precious 24 for python. 
 
-|   Day/Days      | Hours  |
-| -----------| ----------- |
-|  2         |   2 hours (start form 0)   |
-| 3 to 8 | 2 hours each day (freecodecamp)      |
-| 9 to 10   |  2 hours each for Kaggle
+|   Day/Days |      Hours                         |
+| -----------| -----------                        |
+|  2         |   2 hours (start form 0)           |
+| 3 to 8     |   2 hours each day (freecodecamp)  |
+| 9 to 10    |   2 hours each for Kaggle          |
 
 <br>
 <br>
@@ -103,11 +103,11 @@ This is Khan Academy's finest. There are practice tests... Go and ace it!
 We have the materials now and let's look over at the schedule.
 The schedule is being provided for beginners the ones who are already feeling confident on the topics do not go easy on yourself. A little revision would not hurt. **100days** 🔥
 <br>
-|   Day/Days      | Hours  |
-| -----------| ----------- |
-|  11-12        |   2 hours each (Sql From start)   |
-| 13-18 | 2 hours each (SQL Tutorial for Data Analysis)      |
-| 19-20 (Optional) |  Querying and managing data |
+|   Day/Days       |  Hours                                        |
+| -----------      | -----------                                   |
+|  11-12           |   2 hours each (Sql From start)               |
+| 13-18            | 2 hours each (SQL Tutorial for Data Analysis) |
+| 19-20 (Optional) |  Querying and managing data                   |
 
 Now the last is optional if you are able to complete the rest in time. 
 
