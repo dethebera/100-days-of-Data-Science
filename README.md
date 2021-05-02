@@ -144,9 +144,9 @@ The schedule is being provided for beginners the ones who are already feeling co
 
 <br>
 
-# Day 22 to 42  - Mastering PANDAS and NUMPY
+# Day 22 to 32  -  PANDAS and NUMPY
 
-If you are thinking as to "Why on earth would anyone spend next 20 days learning a two libraries?"... Then yes! About a year back, we would be on the same page..But I've realized the importance of these libraries over the course of months and how much we need it to get started with the basic analysis of data. 
+If you are thinking as to "Why on earth would anyone spend next 10 days learning a two libraries?"... Then yes! About a year back, we would be on the same page..But I've realized the importance of these libraries over the course of months and how much we need it to get started with the basic analysis of data. 
 
 Now if you have done some course on python and covered a little bit of pandas then it's great! <br>
 But if you are a beginner then we have got you covered too! 😉 
@@ -156,8 +156,32 @@ In the quest of learning things from sources like Youtube we often forget that a
 **Note:** When you open the next page rather thank clicking on the links provided straightaway, I would recommend reading everything and once you reach the end of the page they have a link to the next module. (Image below)<br>
 ![numpy_tut](/numpy_tut.png)
 
-- [Numpy for beginners](https://www.youtube.com/watch?v=QUT1VHiLmmI) - 1 hours<br>
+- [Numpy for beginners](https://www.youtube.com/watch?v=QUT1VHiLmmI) - 1 hour<br>
 This is absolutely great for people who are getting started. Freecodecamps's course are to point and easy to understand and this should get you started.
 
-- []
+- [Pandas Official Tutorial](https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html) - - Several Hours (self paced) <br> 
+Pandas is an important library when it comes to analysis data with the help of python for data science. Mastering pandas and its features is very important. 
+
+- [Pandas 1](https://www.youtube.com/watch?v=vmEHCJofslg)- 1 Hour<br>
+This video is a complete package but I do recommend using the official tutorial first then using this video as a refresher.
+
+<br>
+
+**These videos and links will hardly take 3-4 hours to complete so why 10 Days...? The thing with python libraries in general is that, one needs to  practice by themselves without the help of any tutorials. Below you will find list of exercises in python to get started with handling data in python.**
+
+- [Pandas with Kaggle](https://www.kaggle.com/learn/pandas) - 4 Hours <br>
+One of the best thing about Kaggle courses is that they make sure whatever they share is focused on data science. So you don't need to worry about drifting away from the topic.<br>
+
+
+
+
+|   Day/Days | Hours                              |
+| ---------- | -----------                        |
+|  22        |   2 hours (Stats-1)                |
+| 23-25      | 7 hours At your own pace (Stats-2) |
+
+
+<br>
+**If you feel 10 days is not enough for practising..Do not worry! Next 10 days all you'll be doing is practising Data Cleaning and Feature engineering with the help of what ever you have learned so far. This will surely help you a lot. But there's still a thing missing .... VISUALIZATIONS.... Thats's right. Sometimes a simple viz tells us a lot about the data and we definitely need it while data cleaning and feature engineering.**
+
 
