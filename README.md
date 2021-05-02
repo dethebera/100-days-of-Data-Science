@@ -3,7 +3,7 @@
 ___________
 __________
 
-## Remember
+## RULES
 Each day you will be sharing your progress as  (example) Day 1/100 - Installing The tools and sharing what you learned and your experience either on LinkedIn or twitter and tagging [our page](https://www.linkedin.com/company/100daysofficial) <br>
 **Do not** forget to use #hashtags - 
 - [#100days]
@@ -144,7 +144,7 @@ The schedule is being provided for beginners the ones who are already feeling co
 
 <br>
 
-# Day 22 to 32  -  PANDAS and NUMPY
+# Day 26 to 35  -  PANDAS and NUMPY
 
 If you are thinking as to "Why on earth would anyone spend next 10 days learning a two libraries?"... Then yes! About a year back, we would be on the same page..But I've realized the importance of these libraries over the course of months and how much we need it to get started with the basic analysis of data. 
 
@@ -176,12 +176,33 @@ One of the best thing about Kaggle courses is that they make sure whatever they 
 
 
 |   Day/Days | Hours                              |
-| ---------- | -----------                        |
-|  22        |   2 hours (Stats-1)                |
-| 23-25      | 7 hours At your own pace (Stats-2) |
+| ---------- | --------------                     |
+|  26-27     |   Numpy Official Tutorial          |
+|  28        |   Numpy for beginners              |
+|  29-31     |   Pandas Official Tutorial         |
+|  32        |   Pandas 1                         |
+|  32-35     |   Pandas with Kaggle               |
 
+<br>
+<br>
+
+# Day 36  TAKE A BREAK 😎 🙌🏼
 
 <br>
 **If you feel 10 days is not enough for practising..Do not worry! Next 10 days all you'll be doing is practising Data Cleaning and Feature engineering with the help of what ever you have learned so far. This will surely help you a lot. But there's still a thing missing .... VISUALIZATIONS.... Thats's right. Sometimes a simple viz tells us a lot about the data and we definitely need it while data cleaning and feature engineering.**
 
+<br>
+<br>
 
+# Day 37 to 40 - Data Visualizations 
+
+There are abundant viz libraries out there, but to dive in the world of viz, starting with "matplotlib" and "seaborn" is a must. 
+
+- [Data Viz with Matplotlib, Seaborn and Pandas(Bonus)](https://www.youtube.com/watch?v=GPVsHOlRBBI&t=19560s)- 2 Hours<br>
+This is another great video from freecodecamp and it starts from the middle of an 9 Hour long video, where we focus only on plotting with pandas and data viz with matplot and seaborn. 
+
+- [Data Viz with Kaggle](https://www.kaggle.com/learn/data-visualization) - 4 Hours<br>
+Now is the time to put the things you learned to the test. Exercises should get your concepts clear. What are you waiting for? Let's get started! 
+<br>
+
+# Day 40 to 50 - Data Visualizations 
