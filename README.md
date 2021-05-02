@@ -144,8 +144,20 @@ The schedule is being provided for beginners the ones who are already feeling co
 
 <br>
 
-# Day 22 to 25  - Statistics for DataScience
-Okay...Now you might be thinking what in the world is going ... SQL then Stats!.... **lemme tell you from my experience of two specializations and ton of courses.** "STATS IS GOD". You heard me right it's way important to understand the use of statistics in data science and why it is important. 
+# Day 22 to 42  - Mastering PANDAS and NUMPY
 
+If you are thinking as to "Why on earth would anyone spend next 20 days learning a two libraries?"... Then yes! About a year back, we would be on the same page..But I've realized the importance of these libraries over the course of months and how much we need it to get started with the basic analysis of data. 
 
+Now if you have done some course on python and covered a little bit of pandas then it's great! <br>
+But if you are a beginner then we have got you covered too! 😉 
+
+- [Numpy Official Tutorial](https://numpy.org/numpy-tutorials/) - Several Hours (self paced) <br>
+In the quest of learning things from sources like Youtube we often forget that almost all libraries are made with the purpose of easing the whole process and they are open source! Which means most of the times they have their own tutorials covering the whole topic from scratch. Here's a tutorial covering concepts needed for getting started with data analysis from the makers of Numpy.<br>
+**Note:** When you open the next page rather thank clicking on the links provided straightaway, I would recommend reading everything and once you reach the end of the page they have a link to the next module. (Image below)<br>
+![numpy_tut](/numpy_tut.png)
+
+- [Numpy for beginners](https://www.youtube.com/watch?v=QUT1VHiLmmI) - 1 hours<br>
+This is absolutely great for people who are getting started. Freecodecamps's course are to point and easy to understand and this should get you started.
+
+- []
 
