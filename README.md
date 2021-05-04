@@ -304,7 +304,6 @@ Spending good 5 days to solve machine learning challenges is a great way to star
 - [Titanic Overview - Kaggle](https://www.kaggle.com/c/titanic)
 - [My notebook- All algorithms](https://www.kaggle.com/utkarshxy/titanic-all-algorithms-comparison#Finally!-Models.....)
 - [Titanic Solving](https://www.kaggle.com/startupsci/titanic-data-science-solutions)
-
 - [180 Ml Problems](https://medium.com/coders-camp/180-data-science-and-machine-learning-projects-with-python-6191bc7b9db9)
 
 
@@ -404,7 +403,7 @@ This is optional but I personally recommend this. This playlist should clear mos
 
 <br>
 
-**Use the last day for completing any pending topics if any or the topics that you had to rush through because of time crunch.** 
+**Use the remaining days for completing any pending topics if any or the topics that you had to rush through because of time crunch Or get started with Kaggle Competitions!** 
 
 <br>
 <br>
