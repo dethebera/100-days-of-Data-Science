@@ -342,7 +342,7 @@ Before diving into deployment let's talk a little about data pipelines. Here's a
 
 Here's a [video](https://www.youtube.com/watch?v=w9IGkBfOoic) that also talks about how to create pipelines using Sklearn. Yes! There are multiple ways of creating pipelines. 
 
-If this 👆🏼 does not get anything in your head then I have a few more videos...WE got you covered! This video by CodingEntrepreneurs is a classic for understanding pipelines with the help of jyputer, pandas and FastAPI.
+If this 👆🏼 does not get anything in your head then I have a few more videos...WE got you covered! [This video](https://www.youtube.com/watch?v=CApCQKuWqBM&t=3503s) by CodingEntrepreneurs is a classic for understanding pipelines with the help of jyputer, pandas and FastAPI.
 
 Now, what are API's... especially in the field of data science? [Here](https://www.analyticsvidhya.com/blog/2016/11/an-introduction-to-apis-application-programming-interfaces-5-apis-a-data-scientist-must-know/).
 
