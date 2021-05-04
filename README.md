@@ -360,7 +360,5 @@ This might be a little difficult to understand by being familiar with cloud serv
 
 Flash itself can be used to deploy models using products like Heroku and Docker. There are plenty of resources out there. Our main focus was to get you familiar with Deployments, API's and Pipelines. 
 
-<br>
-
 ## Automated Data Pipeline playlist by Kaggle 
 [Link](https://www.youtube.com/playlist?list=PLqFaTIg4myu_SCTjwX3pfgGNjQJNJbUzT)
