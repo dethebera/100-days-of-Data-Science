@@ -13,9 +13,9 @@ Each day you will be sharing your progress as (example) Day 1/100 - Installing T
 
 <br>
 
-<img src="example.png" alt="post example" width="450px" height="300px">
+<img src="example.png" alt="post example" width="450px" height="300px"> <br>
 
-<br>
+
 
 This is essential for you as you get to keep a track of your progress and us to stick to our motto for democratizing free learning and increasing our reach so more students get to use these curated pathways to kickstart their journey in various fields. 
 
@@ -178,7 +178,7 @@ This video is a complete package but I do recommend using the official tutorial 
 One of the best thing about Kaggle courses is that they make sure whatever they share is focused on data science. So you don't need to worry about drifting away from the topic.<br>
 
 
-
+### Schedule
 
 |   Day/Days | Hours                              |
 | ---------- | --------------                     |
@@ -199,7 +199,7 @@ One of the best thing about Kaggle courses is that they make sure whatever they 
 <br>
 <br>
 
-# Day 37 to 45 - Data Visualizations 
+# Day 37 to 42 - Data Visualizations 
 
 There are abundant viz libraries out there, but to dive into the world of viz, starting with "matplotlib" and "seaborn" is a must. 
 
@@ -214,8 +214,17 @@ Now is the time to put the things you learned to the test. Exercises should get 
 
 <br>
 
+### Schedule
 
-# Day 45 to 55 - Feature Engineering and Data Cleaning 
+|   Day/Days | Hours                              |
+| ---------- | --------------                     |
+|  37        |   Data Viz with Matplotlib etc     |
+|  41-42     |   Data Viz with Kaggle             |
+
+<br>
+<br>
+
+# Day 43 to 52 - Feature Engineering and Data Cleaning 
 
 Features found in data play a crucial role and directly influence the predictive models and the results that we need. 
 
@@ -229,18 +238,19 @@ Here is the link for an article that should help you understand the importance. 
 
 <br>
 
+### Schedule
 
 |   Day/Days | Hours                              |
 | ---------- | --------------                     |
-|  37-40     |   Kaggle- Feature Engineering      |
-|  41-43     |   Data Cleaning Kaggle             |
-|  44-55     |   Feature Engineering Youtube      |
+|  43-46     |   Kaggle- Feature Engineering      |
+|  47-48     |   Data Cleaning Kaggle             |
+|  49-52     |   Feature Engineering Youtube      |
 
 
 <br>
 
 
-# Day 45 to 59 - Machine Learning
+# Day 53 to 66 - Machine Learning
 
 Now for machine learning, there are "TONS" of courses there.. Literally! But after my experience with it and doing tons of courses (both paid and unpaid), Here's a few I found that turned out to be even better than the paid ones. 
 
@@ -265,27 +275,29 @@ If you haven't completed google's course yet, I recommend that you complete that
 
 
 Now folks, do remember that we are doing this in 20 days. Now mastering this in 20 days is obviously not possible. But these two courses alone should help you understand the very basics of machine learning from scratch and especially Google's course to understand the real-world applications and dive into the world of API's because data science is not just done in jyputer notebooks. 
-**The best resource out there for free is Freecodecamp.org's course on machine learning which is like a specialization of whopping 300 Hours.** Dedicating 2 hours every day..? Thats 150 days alone for machine learning. 
+
+**The best resource out there for free is "Freecodecamp's" course on machine learning which is like a specialization of whopping 300 Hours.** Dedicating 2 hours every day..? Thats 150 days alone for machine learning. 
 
 <br>
 
+### Schedule
 
 |   Day/Days | Hours                              |
 | ---------- | --------------                     |
-|  45-52     |   ML CrashCourse by Google         |
-|  53        |   Problem Framing and Data Prep    |
-|  54-55     |   Clustering                       |
-|  56-57     |   Recommendation Systems           |
-|  58-59     |   Testing and Debug                |
-|  60-62     |   Kaggle ML                        |
-|  63-64     |   Scikit-Learn Course - ML         |
+|  53-59     |   ML CrashCourse by Google         |
+|  60        |   Problem Framing and Data Prep    |
+|  61        |   Clustering                       |
+|  62        |   Recommendation Systems           |
+|  63        |   Testing and Debug                |
+|  64        |   Kaggle ML                        |
+|  65        |   Scikit-Learn Course - ML         |
+|  66        |   Pending Topics                   |
 
 <br>
+<br>
 
-### Day 65  Take a break or use the day to complete pending topics if any. 
 
-
-# Day 66 to 70 - Machine Learning Challenges 
+# Day 67 to 70 - Machine Learning Challenges 
 
 Spending good 5 days to solve machine learning challenges is a great way to start. I would recommend starting with Kaggle's Titanic dataset. There are so many great notebooks using various algorithms. I would even recommend glancing thru my notebook on the dataset featuring almost all machine learning algorithms and their comparison. 
 
@@ -298,10 +310,12 @@ Spending good 5 days to solve machine learning challenges is a great way to star
 
 <br>
 
+### Schedule
+
 |   Day/Days | Hours                              |
 | ---------- | --------------                     |
-|  66-68     |   Titanic ✅                        | 
-|  68-70     |   Various Problems                 |
+|  67-68     |   Titanic ✅                       | 
+|  69-70     |   Various Problems                 |
 
 <br>
 
@@ -329,11 +343,14 @@ This 1 and half hour of deep learning crash course covers almost everything you 
 
 - [Collection of deep learning resources](https://github.com/kmario23/deep-learning-drizzle) - This repo is one of the best collection of resources from links to lectures from Stanford to NYY TO IIT. It's great literally. I would suggest you to download the repo itself just in case it is ever taken down. 
 
+<br>
+
+### Schedule
 
 |   Day/Days | Hours                              |
 | ---------- | --------------                     |
 |  71-73     |   Deep learning intro              | 
-|  74-70     |   Deep learning 5 Courses          |
+|  74-80     |   Deep learning 5 Courses          |
 
 
 <br>
@@ -343,13 +360,16 @@ This 1 and half hour of deep learning crash course covers almost everything you 
 
 Now that you understand almost everything and why do we need models and you can predict stuff. But always remember Data-Science is more than just jyputer notebooks.... And deploying your models where you solve a real world problem is a skill set that is very much in demand and now also a necessity. 
 
-Before diving into deployment let's talk a little about data pipelines. Here's an [article](https://www.geeksforgeeks.org/whats-data-science-pipeline/) from geeksforgeeks that neatly explains the whole concept. 
+Before diving into deployment let's talk a little about **data pipelines**. 
+- Here's an [article](https://www.geeksforgeeks.org/whats-data-science-pipeline/) from geeksforgeeks that neatly explains the whole concept. 
 
-Here's a [video](https://www.youtube.com/watch?v=w9IGkBfOoic) that also talks about how to create pipelines using Sklearn. Yes! There are multiple ways of creating pipelines. 
+- Here's a [video](https://www.youtube.com/watch?v=w9IGkBfOoic) that also talks about how to create pipelines using Sklearn. Yes! There are multiple ways of creating pipelines. 
 
-If this 👆🏼 does not get anything in your head then I have a few more videos...WE got you covered! [This video](https://www.youtube.com/watch?v=CApCQKuWqBM&t=3503s) by CodingEntrepreneurs is a classic for understanding pipelines with the help of jyputer, pandas and FastAPI.
+- If this 👆🏼 does not get anything in your head then I have a few more videos...WE got you covered! [This video](https://www.youtube.com/watch?v=CApCQKuWqBM&t=3503s) by CodingEntrepreneurs is a classic for understanding pipelines with the help of jyputer, pandas and FastAPI.
 
-Now, what are API's... especially in the field of data science? [Here](https://www.analyticsvidhya.com/blog/2016/11/an-introduction-to-apis-application-programming-interfaces-5-apis-a-data-scientist-must-know/).
+- Now, what are API's... especially in the field of data science? [Here](https://www.analyticsvidhya.com/blog/2016/11/an-introduction-to-apis-application-programming-interfaces-5-apis-a-data-scientist-must-know/).
+
+<br>
 
 Once you are done with all those. Let's get back at deployment and look at some resources that can help us with deployment. Do remember, there are multiple deployment platforms and the process is not that different, its almost identical except for a few changes in steps here and there depending on the platform of choice. 
 
@@ -361,17 +381,34 @@ This might be a little difficult to understand by being familiar with cloud serv
 
 **Other ways of deployment ->**
 
-- [Deploy Machine Learning Model using Flask](https://www.youtube.com/watch?v=p_tpQSY1aTs&t=11s)
+- [Deploy Machine Learning Model using Flask](https://www.youtube.com/watch?v=mrExsjcvF4o&t=1s)<br>
+Flask can also be used to deploy models using products like Heroku and Docker. There are plenty of resources out there. Our main focus was to get you familiar with Deployments, API's and Pipelines. 
 
-Flash itself can be used to deploy models using products like Heroku and Docker. There are plenty of resources out there. Our main focus was to get you familiar with Deployments, API's and Pipelines. 
 
-## Automated Data Pipeline playlist by Kaggle 
-[Link](https://www.youtube.com/playlist?list=PLqFaTIg4myu_SCTjwX3pfgGNjQJNJbUzT)
+### Automated Data Pipeline playlist by Kaggle
+This is optional but I personally recommend this. This playlist should clear most of the doubts, If any. Here's the 
+[Link](https://www.youtube.com/playlist?list=PLqFaTIg4myu_SCTjwX3pfgGNjQJNJbUzT).
 
+<br>
+
+### Schedule
+
+|   Day/Days | Hours                                          |
+| ---------- | --------------                                 |
+|  81        |  Geek's Article and Sklearn video              |
+|  82        |  CodingEntrepreneurs 's video, Api article     |
+|  83        |  End to end Ml model deployment - Car prices   |
+|  84        |  Ml deployment in Google Cloud                 |
+|  85        |  Deploy Machine Learning Model using Flask     |
+|  86-90     |  Data Pipeline playlist by Kaggle              |
+
+<br>
+
+**Use the last day for completing any pending topics if any or the topics that you had to rush through because of time crunch.** 
 
 <br>
 <br>
-
+<br>
 
 ## A little Message. 
 <br>
