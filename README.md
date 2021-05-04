@@ -4,7 +4,7 @@ ___________
 __________
 
 ## RULES
-Each day you will be sharing your progress as  (example) Day 1/100 - Installing The tools and sharing what you learned and your experience either on LinkedIn or Twitter and tagging [our page](https://www.linkedin.com/company/100daysofficial) <br>
+Each day you will be sharing your progress as (example) Day 1/100 - Installing The tools and sharing what you learned and your experience either on LinkedIn or Twitter and tagging [our page](https://www.linkedin.com/company/100daysofficial) <br>
 **Do not** forget to use #hashtags - 
 - [#100days]
 - [#100daysofficial]
@@ -14,12 +14,12 @@ Each day you will be sharing your progress as  (example) Day 1/100 - Installing 
 <br>
 This is essential for you as you get to keep a track of your progress and us to stick to our motto for democratizing free learning and increasing our reach so more students get to use these curated pathways to kickstart their journey in various fields. 
 
+**Don't Forget to read a little message at the end for everyone by the Founder of 100days.**
+
 ________
 ____________
 
 <br>
-
-
 <br>
 <br>
 <br>
