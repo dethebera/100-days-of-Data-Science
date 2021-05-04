@@ -12,6 +12,11 @@ Each day you will be sharing your progress as (example) Day 1/100 - Installing T
 - [#100daysofds] 
 
 <br>
+
+<img src="example.png" alt="post example" width="450px" height="300px">
+
+<br>
+
 This is essential for you as you get to keep a track of your progress and us to stick to our motto for democratizing free learning and increasing our reach so more students get to use these curated pathways to kickstart their journey in various fields. 
 
 **Don't Forget to read a little message at the end for everyone by the Founder of 100days.**
