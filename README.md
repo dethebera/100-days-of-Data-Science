@@ -194,7 +194,7 @@ One of the best thing about Kaggle courses is that they make sure whatever they 
 <br>
 <br>
 
-# Day 37 to 40 - Data Visualizations 
+# Day 37 to 45 - Data Visualizations 
 
 There are abundant viz libraries out there, but to dive in the world of viz, starting with "matplotlib" and "seaborn" is a must. 
 
@@ -205,4 +205,162 @@ This is another great video from freecodecamp and it starts from the middle of a
 Now is the time to put the things you learned to the test. Exercises should get your concepts clear. What are you waiting for? Let's get started! 
 <br>
 
-# Day 40 to 50 - Data Visualizations 
+- Research a little on your own.. Now this "do it by your own" you would not find much of it here but there are so so many exercises online for free ... Try it, Play with Datasets, Explore a little. Visualize! 
+
+<br>
+
+
+# Day 45 to 55 - Feature Engineering and Data Cleaning 
+
+Features found in data play a crucial role and directly influence the predictive models and the results that we need. 
+
+Here are the link for a article that should help you understand the importance. [Click here](https://machinelearningmastery.com/discover-feature-engineering-how-to-engineer-features-and-how-to-get-good-at-it/)<br>
+
+- [Feature Engineering Kaggle](https://www.kaggle.com/learn/feature-engineering) - 6 to 8 Hours
+
+- [Data Cleaning Kaggle](https://www.kaggle.com/learn/data-cleaning) - 4 to 6 hours 
+
+- [Feature Engineering by Krish Naik](https://www.youtube.com/playlist?list=PLZoTAELRMXVPwYGE2PXD3x0bfKnR0cJjN)- 12-14 hours
+
+<br>
+
+
+|   Day/Days | Hours                              |
+| ---------- | --------------                     |
+|  37-40     |   Kaggle- Feature Engineering      |
+|  41-43     |   Data Cleaning Kaggle             |
+|  44-55     |   Feature Engineering Youtube      |
+
+
+<br>
+
+
+# Day 45 to 59 - Machine Learning
+
+Now for machine learning there are "TONS" of courses of there.. Literally! But after my experience with it and doing tons of courses (both paid and unpaid), Here's a few I found that turned out to be even better than the paid ones. 
+
+
+- [Machine learning CrashCourse by Google](https://developers.google.com/machine-learning/crash-course) - 15 Hours<br>
+This course is one of the best ones out there for the ones learning by themselves. It has practice questions, real world problems and viz's. Lectures from Google's researcher. 
+This is not just machine learning it also covers ->
+   - Problem Framing - 1 Hour
+   - Data Prep       - 1.5 Hours
+   - Clustering      - 4 Hours
+   - Recommendation  - 4 Hours
+   - Testing and debug - 4 Hours
+
+
+- [Intermediate Machine learning with Kaggle](https://www.kaggle.com/learn/intermediate-machine-learning) - 4 Hours<br>
+If you haven't completed the google's course yet, I recommend that you complete that course first then jump onto Kaggle's Course. 
+
+
+- [Scikit-Learn Course - ML with python](https://www.youtube.com/watch?v=pqNCD_5r0IU) - 2 Hours<br>
+ 
+
+
+
+Now folks, do remember that we are doing this in 20 days. Now mastering this in 20 days is obviously not possible. But these two courses alone should help you understand the very basics of machine learning from scratch and especially Google's course to understand the real world applications and dive into the world of API's because data science is not just done in jyputer notebooks. 
+**The best resource out there for free is Freecodecamp.org's course on machine learning which is like a specialization of whopping 300 Hours.** Dedicating 2 hours everyday..? Thats 150 days alone for machine learning. 
+
+<br>
+
+
+|   Day/Days | Hours                              |
+| ---------- | --------------                     |
+|  45-52     |   ML CrashCourse by Google         |
+|  53        |   Problem Framing and Data Prep    |
+|  54-55     |   Clustering                       |
+|  56-57     |   Recommendation Systems           |
+|  58-59     |   Testing and Debug                |
+|  60-62     |   Kaggle ML                        |
+|  63-64     |   Scikit-Learn Course - ML         |
+
+<br>
+
+### Day 65  Take a break or use the day to complete pending topics, if any. 
+
+
+# Day 66 to 70 - Machine Learning Challenges 
+
+Spending good 5 days to solve machine learning challenges is a great way to start. I would recommend starting with Kaggle's Titanic dataset. There are so many great notebooks using various algorithms. I would even recommend glancing thru the my own notebook on the dataset featuring all almost all machine learning algorithms and their comparison. 
+
+- [Titanic Overview - Kaggle](https://www.kaggle.com/c/titanic)
+- [My notebook- All algorithms](https://www.kaggle.com/utkarshxy/titanic-all-algorithms-comparison#Finally!-Models.....)
+- [Titanic Solving](https://www.kaggle.com/startupsci/titanic-data-science-solutions)
+
+- [180 Ml Problems](https://medium.com/coders-camp/180-data-science-and-machine-learning-projects-with-python-6191bc7b9db9)
+
+
+<br>
+
+|   Day/Days | Hours                              |
+| ---------- | --------------                     |
+|  66-68     |   Titanic ✅                        | 
+|  68-70     |   Various Problems                 |
+
+<br>
+
+# Day 71 to 80 - Complete Deep Learning 
+
+Last few days.... No time to waste. Let's get right to it. 
+### Also if you have reached this far....First of all congrats for reaching till day 70. If you've been following the only rule that was there our team will now start looking at your daily updates for what you have done. There's a suprise at the end. Wait for it.😉
+
+- [Deep learning intro](https://www.youtube.com/watch?v=VyWAvY2CF9c&t=57s)- 1.5 Hours
+This 1 and half hour of deep learning crash course covers almost everything you need to know to get started with deep learning. 
+
+- Deep learning 5 Courses by Andrew Ng - 5 to 6 Hours <br> If you have been in the game of Data Science you might've heard his name before and about "deeplearning-ai" Now, their course is not free but their complete course videos on youtube are.
+   
+  -[Course 1: Neural Networks and Deep Learning](https://www.youtube.com/watch?v=CS4cs9xVecg&list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky0)
+
+  -[Course 2: Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization](https://www.youtube.com/watch?v=1waHlpKiNyY&list=PLkDaE6sCZn6Hn0vK8co82zjQtt3T2Nkqc)
+
+  -[Course 3: Structuring Machine Learning Projects](https://www.youtube.com/watch?v=dFX8k1kXhOw&list=PLkDaE6sCZn6E7jZ9sN_xHwSHOdjUxUW_b)
+
+  -[Course 4: Convolutional Neural Networks](https://www.youtube.com/watch?v=ArPaAX_PhIs&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF)
+
+  -[Course 5: Sequence Models](https://www.youtube.com/watch?v=_i3aqgKVNQI&list=PLkDaE6sCZn6F6wUI9tvS_Gw1vaFAx6rd6)
+
+<br>
+
+- [Collection of deep learning resources](https://github.com/kmario23/deep-learning-drizzle) - This repo is one of the best collection of resources from links to lectures from standford to NYY TO IIT. It's great literally. I would suggest you to download the repo itself just in case it is ever taken down. 
+
+
+|   Day/Days | Hours                              |
+| ---------- | --------------                     |
+|  71-73     |   Deep learning intro              | 
+|  74-70     |   Deep learning 5 Courses          |
+
+
+<br>
+<br>
+
+# Day 81 to 100 - Deployment and Understanding Pipelines
+
+Now that you understand almost everything and why do we need models and you can predict stuff. But always remember Data-Science is more than just jyputer notebooks.... And deploying your models where you solve a real world problem is a skillset which is very much in demand and now also a necessity. 
+
+Before diving into deployment let's talk a little about data pipelines. Here's an [article](https://www.geeksforgeeks.org/whats-data-science-pipeline/) from geeksforgeeks that neatly explains the whole concept. 
+
+Here's a [video](https://www.youtube.com/watch?v=w9IGkBfOoic) that also talks about how to create pipelines using Sklearn. Yes! There are multiple ways of creating pipelines. 
+
+If this 👆🏼 does not get anything in your head then I have a few more videos...WE got you covered! This video by CodingEntrepreneurs is a classic for understanding pipe;ones with the help of jyputer, pandas and FastAPI.
+
+Now what are api's... especially in the field of data science? [Here](https://www.analyticsvidhya.com/blog/2016/11/an-introduction-to-apis-application-programming-interfaces-5-apis-a-data-scientist-must-know/).
+
+Once you are done with all those. Let's get back at deployment and look at some resources that can help us with deployment. Do remember, there are multiple deployment platforms and the process is not that different, its almost identical except for a few changes in steps here and there depending on the platform of choice. 
+
+- [End to end Ml model deployment - Car prices](https://www.youtube.com/watch?v=p_tpQSY1aTs&t=11s) - 1.5 Hours 
+This is again a great video by Krish. Its' clean, simple and beginner friendly. 
+
+- [Ml deployment in Google Cloud](https://www.youtube.com/watch?v=fw6NMQrYc6w&t=3816s)
+This might be a little difficult to understand by being familiar with cloud services and deployment of either google, amazon or microsoft is always a plus. 
+
+**Other ways of deployment ->**
+
+- [Deploy Machine Learning Model using Flask](https://www.youtube.com/watch?v=p_tpQSY1aTs&t=11s)
+
+Flash itself can be used to deploy models using products like Heroku and Docker. There are plenty of resources out there. Our main focus was to get you familiar with Deployments, API's and Pipelines. 
+
+<br>
+
+## Automated Data Pipeline playlist by Kaggle 
+[Link](https://www.youtube.com/playlist?list=PLqFaTIg4myu_SCTjwX3pfgGNjQJNJbUzT)
