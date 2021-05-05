@@ -49,8 +49,6 @@ That's it for DaY 1! Prep yourselves we will be starting from tmr... by then I w
 
 # Day 2 to 10  - Programming for DS (Basic)
 
-If you are already well versed in python. I would still suggest you complete [this](https://www.kaggle.com/learn/python) course which is free and will help you warm up for the journey ahead. 
-
 Now, If you have no clue about python and how to get started well no worries, there are plenty of resources online and I'll  set you on the right path. Let's get started.
 
 1. Python Basics - Start from 0 - [Link](https://www.youtube.com/watch?v=z2k9Jh3jDVU&list=PLWKjhJtqVAbkmRvnFmOd4KhDdlK1oIq23) - 2 Hours <br> 
@@ -63,7 +61,8 @@ Now, If you have no clue about python and how to get started well no worries, th
 3. Python Basics with Kaggle - [LINK](https://www.kaggle.com/learn/python) - 4 Hours.<br>
 This link is from Kaggle. If you know any other languages like C / C++ / Java then python shouldn't be hard to get started with. The above link will take almost 4 hours to get complete even if you are a beginner in python. 
 
-For the ones who have are well versed in python, I would suggest you take the only python with Kaggle that should refresh everything.
+
+For the ones who have are well versed in python, I would suggest you take [Python with Kaggle](https://www.kaggle.com/learn/python) that should refresh everything.
 
 <br>
 
