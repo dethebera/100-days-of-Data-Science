@@ -253,6 +253,7 @@ Here is the link for an article that should help you understand the importance. 
 
 Now for machine learning, there are "TONS" of courses there.. Literally! But after my experience with it and doing tons of courses (both paid and unpaid), Here's a few I found that turned out to be even better than the paid ones. 
 
+- [Intro into Machine Learning with Kaggle](https://www.kaggle.com/learn/intro-to-machine-learning)- 3 Hours
 
 - [Machine learning CrashCourse by Google](https://developers.google.com/machine-learning/crash-course) - 15 Hours<br>
 This course is one of the best ones out there for the ones learning by themselves. It has practice questions, real-world problems and viz's. Lectures from Google's researcher. 
@@ -271,8 +272,6 @@ If you haven't completed google's course yet, I recommend that you complete that
 - [Scikit-Learn Course - ML with python](https://www.youtube.com/watch?v=pqNCD_5r0IU) - 2 Hours<br>
  
 
-
-
 Now folks, do remember that we are doing this in 20 days. Now mastering this in 20 days is obviously not possible. But these two courses alone should help you understand the very basics of machine learning from scratch and especially Google's course to understand the real-world applications and dive into the world of API's because data science is not just done in jyputer notebooks. 
 
 **The best resource out there for free is "Freecodecamp's" course on machine learning which is like a specialization of whopping 300 Hours.** Dedicating 2 hours every day..? Thats 150 days alone for machine learning. 
@@ -283,14 +282,14 @@ Now folks, do remember that we are doing this in 20 days. Now mastering this in 
 
 |   Day/Days | Hours                              |
 | ---------- | --------------                     |
-|  53-59     |   ML CrashCourse by Google         |
-|  60        |   Problem Framing and Data Prep    |
-|  61        |   Clustering                       |
-|  62        |   Recommendation Systems           |
-|  63        |   Testing and Debug                |
-|  64        |   Kaggle ML                        |
-|  65        |   Scikit-Learn Course - ML         |
-|  66        |   Pending Topics                   |
+|  53        |   Intro into Machine Learning      |
+|  54-60     |   ML CrashCourse by Google         |
+|  61        |    Problem Framing and Data Prep   |
+|  62        |     Clustering                     |
+|  63        |     Recommendation Systems         |
+|  64        |     Testing and Debug              |
+|  65        |     Kaggle ML                      |
+|  66        |    Scikit-Learn Course - ML        |
 
 <br>
 <br>
