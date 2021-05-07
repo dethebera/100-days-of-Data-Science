@@ -7,6 +7,7 @@ __________
 
 **Make sure you update/add your title as "Participant" in 100days for duration of 3 months under the professional experience section on LikedIn. It's absolutely fine if you use "Participant" title in the volunteering section too.** 
 
+<br>
 
 ### RULES 
 Each day you will be sharing your progress as (example) Day 1/100 - Installing The tools and sharing what you learned and your experience either on LinkedIn or Twitter and tagging [our page](https://www.linkedin.com/company/100daysofficial) <br>
