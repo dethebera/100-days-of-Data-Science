@@ -3,7 +3,12 @@
 ___________
 __________
 
-## RULES
+### Before starting
+
+**Make sure you update/add your title as "Participant" in 100days for duration of 3 months under the professional experience section on LikedIn. It's absolutely fine if you use "Participant" title in the volunteering section too.** 
+
+
+### RULES 
 Each day you will be sharing your progress as (example) Day 1/100 - Installing The tools and sharing what you learned and your experience either on LinkedIn or Twitter and tagging [our page](https://www.linkedin.com/company/100daysofficial) <br>
 **Do not** forget to use #hashtags - 
 - [#100days]
@@ -14,7 +19,6 @@ Each day you will be sharing your progress as (example) Day 1/100 - Installing T
 <br>
 
 <img src="example.png" alt="post example" width="450px" height="300px"> <br>
-
 
 
 This is essential for you as you get to keep a track of your progress and us to stick to our motto for democratizing free learning and increasing our reach so more students get to use these curated pathways to kickstart their journey in various fields. 
