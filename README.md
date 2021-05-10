@@ -1,5 +1,8 @@
 <br>
 
+<!-- Place this tag where you want the button to render. -->
+<github-button href="https://github.com/utkarshxy/100-days-of-Data-Science" data-color-scheme="no-preference: dark_dimmed; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star utkarshxy/100-days-of-Data-Science on GitHub">Star</github-button>
+
 # 100days of DataScience 
 
 ___________
