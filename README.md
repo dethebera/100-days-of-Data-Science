@@ -1,15 +1,14 @@
 <br>
 
+# 💯 100days of Data Science
+
+<br>
 
 
-# 100days of DataScience 
+## 📍 Before starting
 
-___________
-__________
-
-### Before starting
-
-**Make sure you update/add your title as "Participant" in 100days for duration of 3 months under the professional experience section on LikedIn. It's absolutely fine if you use "Participant" title in the volunteering section too.** 
+**✔️ Make sure you update/add your title as "Participant" in 100days for duration of 3 months under the professional experience section on LikedIn. It's absolutely fine if you use "Participant" title in the volunteering section too.** <br>
+**✔️ ⭐️ Star the repo? Cause why not 😅 😊** 
 
 <br>
 
@@ -38,7 +37,7 @@ ____________
 <br>
 <br>
 
-# Day 1 - Installing the Tools
+# ✅ Day 1 - Installing the Tools
 
 Now, there isn't a fixed IDE that you can get your hand dirty with. But the best two are - 
 - [Anaconda](https://www.anaconda.com/products/individual) 
@@ -56,7 +55,7 @@ That's it for DaY 1! Prep yourselves we will be starting from tmr... by then I w
 
 <br>
 
-# Day 2 to 10  - Programming for DS (Basic)
+# ✅ Day 2 to 10  - Programming for DS (Basic)
 
 Now, If you have no clue about python and how to get started well no worries, there are plenty of resources online and I'll  set you on the right path. Let's get started.
 
@@ -75,7 +74,7 @@ For the ones who have are well versed in python, I would suggest you take [Pytho
 
 <br>
 
-### Schedule
+### 🗓 Schedule
 
 Given that there is no fixed way that one might use the above links let's sort the schedule part for you. We have 8 days in total. (It was supposed to be 7 but we value your precious **Sunday** 😉).
 
@@ -93,7 +92,7 @@ So we have a lot to work with... yeah? Here...we are planning to utilize 2 hours
 <br>
 <br>
 
-# Day 11 to 21  - SQL for DataScience
+# ✅ Day 11 to 21  - SQL for DataScience
 Hi! Pretty sure you are a "pythonista" now, let's tackle this SQL. 
 Unlike many other pathways out there, SQL is usually placed at the last to cover and being a student myself I am pretty sure if SQL is done in the last days.... Nobody would want to do it.
 Why should we tackle it AND **Why 10 days for SQL?** and get it done with? 
@@ -111,7 +110,7 @@ This is Khan Academy's finest. There are practice tests... Go and ace it!
 ![pic](/sqltut.png)
 <br>
 
-### Schedule
+### 🗓 Schedule
 
 We have the materials now and let's look over the schedule.
 The schedule is being provided for beginners the ones who are already feeling confident on the topics do not go easy on yourself. A little revision would not hurt. **100days** 🔥
@@ -129,7 +128,7 @@ Now the last is optional if you can complete the rest in time.
 <br>
 <br>
 
-# Day 22 to 25  - Statistics for DataScience
+# ✅ Day 22 to 25  - Statistics for DataScience
 Okay...Now you might be thinking what in the world is going ... SQL then Stats!.... **lemme tell you from my experience of two specializations and a ton of courses.** "STATS IS GOD". You heard me right it's way important to understand the use of statistics in data science and why it is important. 
 
 If you are getting started with stats for data science here is a great article to just read about the use of stats and the various approaches. [Link](https://www.freecodecamp.org/news/statistics-for-data-science/).
@@ -144,7 +143,7 @@ This amazing 7-hour course is taught by PhD from Stanford for FREE! I know right
 <br>
 
 
-### Schedule
+### 🗓 Schedule
 
 We have the materials now and let's look over the schedule.
 The schedule is being provided for beginners the ones who are already feeling confident on the topics do not go easy on yourself. A little revision would not hurt. **100days** 🔥
@@ -157,7 +156,7 @@ The schedule is being provided for beginners the ones who are already feeling co
 
 <br>
 
-# Day 26 to 35  -  PANDAS and NUMPY
+# ✅ Day 26 to 35  -  PANDAS and NUMPY
 
 If you are thinking as to "Why on earth would anyone spend the next 10 days learning two libraries?"... Then yes! About a year back, we would be on the same page..But I've realized the importance of these libraries over the course of months and how much we need it to get started with the basic analysis of data. 
 
@@ -186,7 +185,7 @@ This video is a complete package but I do recommend using the official tutorial 
 One of the best thing about Kaggle courses is that they make sure whatever they share is focused on data science. So you don't need to worry about drifting away from the topic.<br>
 
 
-### Schedule
+### 🗓 Schedule
 
 |   Day/Days | Hours                              |
 | ---------- | --------------                     |
@@ -199,7 +198,7 @@ One of the best thing about Kaggle courses is that they make sure whatever they 
 <br>
 <br>
 
-# Day 36  TAKE A BREAK 😎 🙌🏼
+# ✅ Day 36  TAKE A BREAK 😎 🙌🏼
 
 <br>
 **If you feel 10 days is not enough for practising..Do not worry! Next 10 days all you'll be doing is practising Data Cleaning and Feature engineering with the help of whatever you have learned so far. This will surely help you a lot. But there's still a thing missing .... VISUALIZATIONS.... That's right. Sometimes a simple viz tells us a lot about the data and we need it while data cleaning and feature engineering.**
@@ -207,7 +206,7 @@ One of the best thing about Kaggle courses is that they make sure whatever they 
 <br>
 <br>
 
-# Day 37 to 42 - Data Visualizations 
+# ✅ Day 37 to 42 - Data Visualizations 
 
 There are abundant viz libraries out there, but to dive into the world of viz, starting with "matplotlib" and "seaborn" is a must. 
 
@@ -222,7 +221,7 @@ Now is the time to put the things you learned to the test. Exercises should get 
 
 <br>
 
-### Schedule
+### 🗓 Schedule
 
 |   Day/Days | Hours                              |
 | ---------- | --------------                     |
@@ -232,7 +231,7 @@ Now is the time to put the things you learned to the test. Exercises should get 
 <br>
 <br>
 
-# Day 43 to 52 - Feature Engineering and Data Cleaning 
+# ✅ Day 43 to 52 - Feature Engineering and Data Cleaning 
 
 Features found in data play a crucial role and directly influence the predictive models and the results that we need. 
 
@@ -246,7 +245,7 @@ Here is the link for an article that should help you understand the importance. 
 
 <br>
 
-### Schedule
+### 🗓 Schedule
 
 |   Day/Days | Hours                              |
 | ---------- | --------------                     |
@@ -258,7 +257,7 @@ Here is the link for an article that should help you understand the importance. 
 <br>
 
 
-# Day 53 to 66 - Machine Learning
+# ✅ Day 53 to 66 - Machine Learning
 
 Now for machine learning, there are "TONS" of courses there.. Literally! But after my experience with it and doing tons of courses (both paid and unpaid), Here's a few I found that turned out to be even better than the paid ones. 
 
@@ -287,7 +286,7 @@ Now folks, do remember that we are doing this in 20 days. Now mastering this in 
 
 <br>
 
-### Schedule
+### 🗓 Schedule
 
 |   Day/Days | Hours                              |
 | ---------- | --------------                     |
@@ -304,7 +303,7 @@ Now folks, do remember that we are doing this in 20 days. Now mastering this in 
 <br>
 
 
-# Day 67 to 70 - Machine Learning Challenges 
+# ✅ Day 67 to 70 - Machine Learning Challenges 
 
 Spending good 5 days to solve machine learning challenges is a great way to start. I would recommend starting with Kaggle's Titanic dataset. There are so many great notebooks using various algorithms. I would even recommend glancing thru my notebook on the dataset featuring almost all machine learning algorithms and their comparison. 
 
@@ -316,7 +315,7 @@ Spending good 5 days to solve machine learning challenges is a great way to star
 
 <br>
 
-### Schedule
+### 🗓 Schedule
 
 |   Day/Days | Hours                              |
 | ---------- | --------------                     |
@@ -325,7 +324,7 @@ Spending good 5 days to solve machine learning challenges is a great way to star
 
 <br>
 
-# Day 71 to 80 - Complete Deep Learning 
+# ✅ Day 71 to 80 - Complete Deep Learning 
 
 Last few days.... No time to waste. Let's get right to it. 
 ### Also if you have reached this far....First of all congrats on reaching day 70. If you've been following the only rule that was there our team will now start looking at your daily updates for what you have done. There's a surprise at the end. Wait for it.😉
@@ -351,7 +350,7 @@ This 1 and half hour of deep learning crash course covers almost everything you 
 
 <br>
 
-### Schedule
+### 🗓 Schedule
 
 |   Day/Days | Hours                              |
 | ---------- | --------------                     |
@@ -362,7 +361,7 @@ This 1 and half hour of deep learning crash course covers almost everything you 
 <br>
 <br>
 
-# Day 81 to 100 - Deployment and Understanding Pipelines
+# ✅ Day 81 to 100 - Deployment and Understanding Pipelines
 
 Now that you understand almost everything and why do we need models and you can predict stuff. But always remember Data-Science is more than just jyputer notebooks.... And deploying your models where you solve a real world problem is a skill set that is very much in demand and now also a necessity. 
 
@@ -391,13 +390,13 @@ This might be a little difficult to understand by being familiar with cloud serv
 Flask can also be used to deploy models using products like Heroku and Docker. There are plenty of resources out there. Our main focus was to get you familiar with Deployments, API's and Pipelines. 
 
 
-### Automated Data Pipeline playlist by Kaggle
+### ✅ Automated Data Pipeline playlist by Kaggle
 This is optional but I personally recommend this. This playlist should clear most of the doubts, If any. Here's the 
 [Link](https://www.youtube.com/playlist?list=PLqFaTIg4myu_SCTjwX3pfgGNjQJNJbUzT).
 
 <br>
 
-### Schedule
+### 🗓Schedule
 
 |   Day/Days | Hours                                          |
 | ---------- | --------------                                 |
