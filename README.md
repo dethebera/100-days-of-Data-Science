@@ -1,6 +1,6 @@
 <br>
 
-# 💯 100days of Data Science
+# 💯 [100days](https://100days.codes) of Data Science
 
 <br>
 
