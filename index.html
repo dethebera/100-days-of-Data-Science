@@ -1,0 +1,761 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title> #100daysofDataScience</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="cbdc5a1e-a16b-41b5-9edd-524da3d768f6" class="page sans"><header><img class="page-cover-image" src="COMMUNITY.png" style="object-position:center 49.36000000000001%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="Copy_of_Copy_of_Copy_of_Copy_of_100_days-4.gif"/></div><h1 class="page-title"> #<a href="https://100days.codes/">100days</a>ofDataScience</h1></header><div class="page-body"><p id="1c502016-c517-42a8-88e2-69773bbc612a" class="">
+</p><h1 id="0dff90ec-bcab-4f51-b637-f73623238cdc" class="block-color-purple_background">⚠️ Before starting</h1><p id="a69af11e-50d1-467d-8146-76823732418a" class="">
+</p><ol id="83c66e9f-4d3d-4428-a5d1-3859388f05af" class="numbered-list" start="1"><li><strong>⭐️ Star this repo. </strong><mark class="highlight-yellow"><a href="https://github.com/utkarshxy/100-days-of-Data-Science"><strong>[Link]</strong></a></mark><mark class="highlight-yellow"><strong> </strong></mark><strong> Cause why not 😅 😊</strong></li></ol><ol id="a182c6ee-20ca-4447-bdf2-398489d7ad1e" class="numbered-list" start="2"><li>Update/add your title as “<mark class="highlight-yellow">Participant</mark>” in 100days under the professional experience section on LikedIn.<figure id="7399e33c-9544-49ea-9c18-68197a33270f" class="image"><a href="#100daysofDataScience%207399e33c954449ea9c1868197a33270f/Screenshot_2021-05-13_at_1.24.03_PM.png"><img style="width:576px" src="Screenshot_2021-05-13_at_1.24.03_PM.png"/></a></figure><p id="06bb84cb-89a3-4c4b-9020-15788e593c41" class="">
+</p></li></ol><ol id="67e690e3-38cf-4ae5-92e1-c6f848a3c914" class="numbered-list" start="3"><li>Make sure you have followed all steps mentioned in &quot;<mark class="highlight-purple">How to get Started&quot;</mark> page. <figure id="a14e6d48-416a-4c09-bcf6-626e1773927c" class="image"><a href="#100daysofDataScience%207399e33c954449ea9c1868197a33270f/Screenshot_2021-05-12_at_7.06.13_PM.png"><img style="width:576px" src="Screenshot_2021-05-12_at_7.06.13_PM.png"/></a></figure><p id="fa64aeed-e588-4ced-aaa7-574d0c6ef243" class="">
+</p></li></ol><ol id="a7e0bdd4-37e0-4dfa-9b8a-e02ba17b4edd" class="numbered-list" start="4"><li><mark class="highlight-purple">Lastly, Before starting Day 1</mark><mark class="highlight-yellow"> - </mark><span style="border-bottom:0.05em solid"><strong>Do not forget to commit to the challenge publicly. </strong></span>
+</li></ol><ol id="9bae4dbe-de8a-4e4d-8743-261742062d56" class="numbered-list" start="5"><li><strong>Everything mentioned in this pathway with colour &quot;</strong><strong><mark class="highlight-yellow">Yellow</mark></strong><strong>&quot; is a link. 
+ Don&#x27;t forget to click it! </strong></li></ol><p id="ebee8ca3-9ff3-488d-97d0-ae87398dc600" class="">
+
+</p><h1 id="794ed29d-3243-45ad-a539-4a434b689f2a" class="">🏁 <mark class="highlight-orange">Golden RULE</mark></h1><p id="f6916dd1-0300-4864-a8d7-b999f1d2a4b2" class="">(More like orange rule but I failed to find the golden colour 😂)
+</p><p id="787fed23-50d6-4993-a083-88ecb7885c66" class="">Each day you will be sharing your progress as (example) - </p><p id="577dab9f-7fbb-4db1-a398-1e386187adc2" class="">
+Day 1/100 - Installing The tools and sharing what you learned and your experience on LinkedIn,  tagging <a href="https://www.linkedin.com/company/100daysofficial">our page</a>.
+
+<strong>Do not</strong> forget to use #hashtags : </p><ul id="2d30a4a6-19c7-429a-99a5-8d12307e633f" class="bulleted-list"><li>#100days</li></ul><ul id="32f82ce6-e005-47b8-8a5d-10cc6810d011" class="bulleted-list"><li> #100daysOfficial</li></ul><ul id="0d3e9bc7-c75c-4441-bf5e-c2ff874c9d3b" class="bulleted-list"><li>#100daysoflearning</li></ul><ul id="1881717f-7718-43f7-a549-5214ffedf49b" class="bulleted-list"><li>#100daysofDataScience</li></ul><p id="0fcc5d29-8077-4085-b3ef-da1eaa3a1a63" class="">
+</p><figure id="2039a35d-9b8f-4b7e-a378-aeccac73b339" class="image"><a href="#100daysofDataScience%207399e33c954449ea9c1868197a33270f/example.png"><img style="width:480px" src="example.png"/></a></figure><p id="4128ea8e-d9ea-4afe-abed-50acc2e18c75" class="">
+</p><blockquote id="ed87bace-4547-4285-94b1-4c1b9c9fc1ff" class="">This is essential for you as you get to keep a track of your progress and us to stick to our motto for democratizing free learning and increasing our reach so more students get to use these curated pathways to kickstart their journey in various fields.</blockquote><p id="b7c3a0f8-4413-45c9-a5b7-d34f9e2236ab" class=""><strong>Don’t Forget to read a little message at the end for everyone by the Founder of 100days.</strong></p><hr id="48fe4d08-05c8-4beb-ae50-f1fbfac0313e"/><hr id="5cf89d87-1a81-41d3-a8bd-606c69368800"/><p id="22055c28-57b0-4f80-9817-b7401e1f14ef" class="">
+</p><p id="86c01019-056f-40c0-b03a-08ab9baa82fc" class="">
+</p><p id="19396758-7adb-435e-bb9b-1e12a0edc8f7" class="">
+</p><h1 id="23b7c69c-3b28-4682-9caf-04490995e36d" class="">✅  Day 1 - Installing the Tools</h1><p id="f95fd937-70b3-4e41-94da-f1dcebf2a5da" class="">
+</p><p id="1d919a67-c962-4b33-9d2f-8851025a48d6" class="">Now, there isn’t a fixed IDE that you can get your hand dirty with. But the best two are - - <mark class="highlight-yellow"><a href="https://www.anaconda.com/products/individual">Anaconda</a></mark><mark class="highlight-yellow"> - </mark><mark class="highlight-yellow"><a href="https://code.visualstudio.com/download">Vs Code</a></mark></p><p id="7749199f-f9ff-4bec-b952-1260224b8a0b" class="">
+</p><ul id="c29e579c-9d48-4ba9-8b74-4559457e7c8f" class="bulleted-list"><li>Keep in mind that here we are taking the more “Traditional” approach of learning Data Science with <strong>Python</strong>, if you feel like working with R, that is amazing go ahead and download <mark class="highlight-yellow"><a href="https://www.rstudio.com/">R Studio</a></mark><mark class="highlight-yellow">.</mark></li></ul><ul id="47943087-44b0-4b70-af90-50dae11360b2" class="bulleted-list"><li>Also… for windows users here is the <mark class="highlight-yellow"><a href="https://www.youtube.com/watch?v=AKVRkB0fot0">link</a></mark> to get you started with the installation.</li></ul><p id="33f5adda-b626-494d-ba5b-3fee62d806fe" class="">That’s it for DaY 1! Prep yourselves we will be starting from tmr… by then I would suggest you all go thru few tutorials and get familiar with the environment. Anaconda is a full data science package and unlike VS Code you do not have to install anything else. VS Code, on the other hand, takes very little efforts to set up and a little time to get used to, but once done it works like a charm and I use it as a one stop for all coding projects and building websites. Below is the link that should help you set up “Extensions” for VS Code.</p><p id="ee131013-927e-4bdb-92e1-c5700280a3a4" class="block-color-yellow"><a href="https://code.visualstudio.com/docs/python/data-science-tutorial">Vs Code Setup for Data Science.</a></p><p id="4b299fc0-47cd-4f2a-bcac-18d1e769b09a" class="">
+</p><p id="51070625-8a70-4596-a33b-d5643f86a311" class="">
+</p><p id="46f945d2-d35a-4cd3-ae52-752e726e4b67" class="">
+</p><h1 id="2a8f19ed-f9a0-45ee-9df2-8069a4fde9bb" class="">✅  Day 2 to 10 - Programming for DS (Basic)</h1><p id="6a5946b3-6888-40f7-9f6a-6d2d2252fff8" class="">
+</p><p id="963795c3-4879-412c-ab4b-a6a8e354cf68" class="">Now, If you have no clue about python and how to get started well no worries, there are plenty of resources online and I’ll set you on the right path. Let’s get started.</p><ol id="f9696e3c-bae6-4723-b488-09c6d4590cbe" class="numbered-list" start="1"><li>Python Basics - Start from 0 -<mark class="highlight-yellow"> </mark><mark class="highlight-yellow"><a href="https://www.youtube.com/watch?v=z2k9Jh3jDVU&amp;list=PLWKjhJtqVAbkmRvnFmOd4KhDdlK1oIq23">Link</a></mark><mark class="highlight-yellow"> </mark>- 2 Hours 
+Now if none of these links helps you and you still do not understand…. do not worry! We still got you covered. Here’s this amazing video for everyone starting right from 0.
+</li></ol><ol id="ed41262e-6dfe-41e4-8476-16e53e064d53" class="numbered-list" start="2"><li>Python for Data Science - <mark class="highlight-yellow"><a href="https://www.youtube.com/watch?v=LHBE6Q9XlzI">LINK</a></mark> - 12 Hours 
+Freecodecamp is one of the best free resources and here we leverage their amazing 12 hour video for absolute beginners to get started with their journey.
+</li></ol><ol id="317afac2-082b-4f5f-9af2-293c466be34f" class="numbered-list" start="3"><li>Python Basics with Kaggle - <mark class="highlight-yellow"><a href="https://www.kaggle.com/learn/python">LINK</a></mark><mark class="highlight-yellow"> </mark>- 4 Hours 
+This link is from Kaggle. If you know any other languages like C / C++ / Java then python shouldn’t be hard to get started with. The above link will take almost 4 hours to get complete even if you are a beginner in python.</li></ol><p id="a195dfb6-1abf-4c6a-86a0-90a14f898d59" class="">For the ones who have are well versed in python, I would suggest you take <mark class="highlight-yellow"><a href="https://www.kaggle.com/learn/python">Python with Kaggle</a></mark><mark class="highlight-yellow"> </mark>that should refresh everything.
+
+</p><h2 id="0b087c5c-1d5c-4422-84aa-ed7763d124b3" class="">🗓  Schedule
+</h2><p id="a2e5579c-d173-41bb-a36b-3daecd77b2b4" class="">Given that there is no fixed way that one might use the above links let’s sort the schedule part for you. We have 8 days in total. (It was supposed to be 7 but we value your precious <strong>Sunday</strong> 😉).</p><p id="ef826c97-be73-4c81-8a56-099ceb9502be" class=""><mark class="highlight-red"><strong>For Beginners</strong></mark><mark class="highlight-red"> (Using All 3 links)</mark></p><p id="9df0ae38-73ce-4287-b719-7c5c75a707de" class="">So we have a lot to work with… yeah? Here…we are planning to utilize 2 hours from your precious 24 for python.</p><div id="5d326966-7b30-4e69-949b-cd901cd8b3b2" class="collection-content"><h4 class="collection-title">
+
+
+</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Day/Days</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Hours</th></tr></thead><tbody><tr id="3da98a46-29e1-4819-a579-2a08ae29bfa7"><td class="cell-title"><a href="https://www.notion.so/2-3da98a4629e14819a5792a08ae29bfa7">2</a></td><td class="cell-]FYU">2 hours (start from 0)</td></tr><tr id="7b8d4c2b-0efb-4ec2-aa83-26d14477b689"><td class="cell-title"><a href="https://www.notion.so/3-to-8-7b8d4c2b0efb4ec2aa8326d14477b689">3 to 8</a></td><td class="cell-]FYU">2 hours each day (freecodecamp)</td></tr><tr id="05b275e2-90fd-40d1-9a04-54c3bacbda33"><td class="cell-title"><a href="https://www.notion.so/9-to-10-05b275e290fd40d19a0454c3bacbda33">9 to 10</a></td><td class="cell-]FYU">2 hours each for Kaggle</td></tr></tbody></table></div><p id="4d12cb87-fb12-40ab-9c08-fa9f94254d19" class="">
+</p><p id="2711297c-199f-4190-b84a-10b0e5386569" class="">
+</p><p id="54f5d33d-b416-47c7-8a8c-c0e900a71757" class="">
+</p><h1 id="bf1f27a0-55ab-4d4a-aba6-38b87860524f" class="">✅  Day 11 to 21 - SQL for DataScience</h1><p id="cc06e206-d72d-48d5-b240-80b78f4d465f" class="">
+</p><p id="c622a316-2bd3-47c9-9e5b-61d1710f4d87" class="">Hi! Pretty sure you are a “<mark class="highlight-purple">pythonista</mark>” now, let’s tackle this SQL. Unlike many other pathways out there, SQL is usually placed at the last to cover and being a student myself I am pretty sure if SQL is done in the last day, nobody would want to do it. Why should we tackle it AND <strong>Why 10 days for SQL and </strong>get it done with?. 
+<mark class="highlight-purple">It’s easy. It’s super easy. It’s a must if you want to be a Data Scientist</mark></p><p id="8cc593d7-57d8-4e4a-9d97-969eb10b51a3" class="">Now SQL is very important when it comes to handling data and with analysis. Below are the links that you will surely help and set you on the path to master SQL</p><p id="9305e6c7-5cb6-48ec-9bb8-0c30d562623d" class="">
+</p><ul id="b4edfc32-4de1-477c-a609-d6c8db22c0c9" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.youtube.com/watch?v=HXV3zeQKqGY">SQL from the start</a></mark><mark class="highlight-yellow"> </mark>- 4 hours  
+Beginners… This is right where you should start.</li></ul><ul id="bb842218-ab70-4dc5-8c90-466c19b4d793" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.khanacademy.org/computing/computer-programming/sql#sql-basics">Querying and managing data</a></mark><mark class="highlight-yellow"> 
+</mark>This is Khan Academy’s finest. There are practice tests… Go and ace it!</li></ul><ul id="62303686-02cb-4680-8854-90a8964717d4" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://mode.com/sql-tutorial/introduction-to-sql/">SQL Tutorial for Data Analysis</a></mark> 
+<strong>Note</strong>: This is the most important of the lot, as we have just 100 Days, we need to know what a particular topic is and what it is used for in a certain area. Here, we are focusing on <strong>SQL for Data Science</strong>. This link has 3 subparts (basic, intermediate, advanced). Check the image below. <p id="0f324324-e1dd-45b5-a86a-1835bcf0a896" class="">
+</p><figure id="821528a1-b643-4a60-b433-79b761a013d9" class="image"><a href="#100daysofDataScience%207399e33c954449ea9c1868197a33270f/sqltut.png"><img style="width:528px" src="sqltut.png"/></a></figure><p id="8aee10af-b1b3-4079-a31e-0945d3069387" class="">
+</p></li></ul><h2 id="5bbe82fe-8b3f-4e3f-928c-09d27321d3c5" class="">🗓 Schedule
+</h2><p id="7f1a7fcf-c3f1-4a84-a44b-60e1d571d017" class="">We have the materials now and let’s look over the schedule. The schedule is being provided for beginners the ones who are already feeling confident on the topics do not go easy on yourself. A little revision would not hurt. <strong>100days</strong> 🔥</p><div id="e88293c2-dd51-4f86-b770-2f7f9930032b" class="collection-content"><h4 class="collection-title"></h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Day/Days</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Hours</th></tr></thead><tbody><tr id="f0b94d2a-0c1d-4801-9711-0e1371ad4c21"><td class="cell-title"><a href="https://www.notion.so/11-12-f0b94d2a0c1d480197110e1371ad4c21">11-12</a></td><td class="cell-|bFh">2 hours each (Sql From start)</td></tr><tr id="99d067fa-591a-492c-8fd2-25ce4ed5ea2f"><td class="cell-title"><a href="https://www.notion.so/13-18-99d067fa591a492c8fd225ce4ed5ea2f">13-18</a></td><td class="cell-|bFh">2 hours each (SQL Tutorial for Data Analysis)</td></tr><tr id="a9e2d3a2-1ecf-451a-80b1-7be413dda702"><td class="cell-title"><a href="https://www.notion.so/19-20-Optional-a9e2d3a21ecf451a80b17be413dda702">19-20 (Optional)</a></td><td class="cell-|bFh">Querying and managing data</td></tr></tbody></table></div><p id="a0c96e1f-07fb-4af0-9a21-ad0965747f05" class="">Now the last is optional if you can complete the rest in time.</p><p id="72cdbb0f-09c9-4c66-812a-b0bcb503be55" class="">
+</p><p id="b4e89fea-e5b2-4204-b60c-1f39c15bd8a7" class="">
+</p><p id="3ff1978d-ce26-4b36-866f-70cf3745e2ea" class="">
+</p><h1 id="2d556e9b-fd0c-4ffb-8b7e-228ffcf68c39" class="">✅  Day 22 to 25 - Statistics for DataScience</h1><p id="157c1ba8-8ab1-48f4-b9c7-55a2b8a9dd6a" class="">
+</p><p id="fd97919b-14a0-4ebe-bfc7-fe9e21f97ef7" class="">Okay…Now you might be thinking what in the world is going … SQL then Stats!…. <strong>lemme tell you from my experience of two specializations and a ton of courses.</strong> “STATS IS GOD”. You heard me right it’s way important to understand the use of statistics in data science and why it is important.</p><p id="bf008eb4-d2ad-4f55-8beb-5482f0bacf94" class="">If you are getting started with stats for data science here is a great article to just read about the use of stats and the various approaches. <mark class="highlight-yellow"><a href="https://www.freecodecamp.org/news/statistics-for-data-science/">Link</a></mark></p><p id="ddcb304a-a4ce-4da3-a63c-0a486061add6" class="">Now let’s start with the videos that will surely help you get started -&gt; </p><ul id="52c89e92-7594-43db-8647-03bad62643b5" class="bulleted-list"><li> <mark class="highlight-yellow"><a href="https://www.youtube.com/watch?v=ua-CiDNNj30&amp;list=PLWKjhJtqVAblQe2CCWqV4Zy3LY01Z8aF1&amp;index=1&amp;t=17043s">Stats-1</a></mark> - 1 Hour 
+This directly starts from 4th hour of the video which is 6 hours long as we only need to focus on the stats part. </li></ul><ul id="5794595a-b777-45f7-96aa-3d0ecce9ce47" class="bulleted-list"><li> <mark class="highlight-yellow"><a href="https://www.youtube.com/watch?v=Vfo5le26IhY">Stats-2</a></mark><mark class="highlight-yellow"> </mark>- 7 Hours 
+This amazing 7-hour course is taught by PhD from Stanford for FREE! I know right? This covers almost all topics to get well versed in the subject</li></ul><p id="af97fde8-4dd9-4832-af18-dd7f81acb449" class=""><strong>Remember</strong> You will need additional resources that you find while researching on your own after you are done with 100days.</p><p id="040f639b-dc66-400a-878b-98fb71e3270e" class="">
+</p><p id="0f6b7a93-97c3-40b1-9aba-09e650a46099" class="">
+</p><h2 id="3a8ca88a-5d58-45d7-b544-8e434001e8b3" class="">🗓 Schedule</h2><p id="d883b06f-1c3c-4788-bdbd-678a0ce3239b" class="">We have the materials now and let’s look over the schedule. The schedule is being provided for beginners the ones who are already feeling confident on the topics do not go easy on yourself. A little revision would not hurt. <strong>100days</strong> 🔥</p><div id="a06ac0fc-9691-4371-a131-3991fc5b5afa" class="collection-content"><h4 class="collection-title"></h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Day/Days</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Hours</th></tr></thead><tbody><tr id="23ff397b-25d6-4db9-944f-4b3749b9218b"><td class="cell-title"><a href="https://www.notion.so/22-23ff397b25d64db9944f4b3749b9218b">22</a></td><td class="cell-`DYM">2 hours (Stats-1)</td></tr><tr id="0fff3d31-fa3c-4e50-abb4-c82f25d824a0"><td class="cell-title"><a href="https://www.notion.so/23-25-0fff3d31fa3c4e50abb4c82f25d824a0">23-25</a></td><td class="cell-`DYM">7 hours At your own pace (Stats-2)</td></tr></tbody></table></div><p id="a0fe2f2a-984f-4cf3-9c74-6b4799cfe74f" class="">
+</p><p id="ea85379a-3729-4495-b9d9-df7df970ea87" class="">
+</p><p id="36ad265d-67ae-4aae-b8c9-92721ad37dea" class="">
+</p><h1 id="902ac991-ca17-4426-9d34-93f2836f8ad6" class="">✅  Day 26 to 35 - PANDAS and NUMPY</h1><p id="7d4fbd81-e655-4084-bbf9-241abf39a6a0" class="">
+</p><p id="130215de-7859-4043-bb0e-460e67a22851" class="">If you are thinking as to “Why on earth would anyone spend the next 10 days learning two libraries?”… Then yes! About a year back, we would be on the same page..But I’ve realized the importance of these libraries over the course of months and how much we need it to get started with the basic analysis of data.</p><p id="9d731d41-a58a-4823-bb57-57b679260878" class="">Now if you have done some course on python and covered a little bit of pandas then it’s great!  But if you are a beginner then we have got you covered too! 😉</p><ul id="79df697b-7d1b-4d7b-96fd-dbd7f26d5a46" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://numpy.org/numpy-tutorials/">Numpy Official Tutorial</a></mark> - Several Hours (self-paced)  
+In the quest of learning things from sources like Youtube, we often forget that almost all libraries are made to ease whole process and they are open source! This means most of the times they have their tutorials covering the whole topic from scratch. Here’s a tutorial covering concepts needed for getting started with data analysis from the makers of Numpy. 
+<strong>Note:</strong> When you open the next page rather than clicking on the links provided straight away, I would recommend reading everything and once you reach the end of the page they have a link to the next module. (Image below)
+</li></ul><figure id="260ce7c6-622e-4b5d-8990-12e7bafda204" class="image"><a href="#100daysofDataScience%207399e33c954449ea9c1868197a33270f/numpy_tut.png"><img style="width:2880px" src="numpy_tut.png"/></a></figure><p id="34d9c508-648f-4a18-a3eb-f3cb68d85363" class="">
+</p><ul id="1fd68b5c-d5e5-40bb-a050-c130e16694ab" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.youtube.com/watch?v=QUT1VHiLmmI">Numpy for beginners</a></mark> - 1 hour 
+This is great for people who are getting started. Freecodecamps’s course is to point and easy to understand and this should get you started.</li></ul><ul id="89b96b1b-fc0a-46b0-8caf-b0a55df52be9" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html">Pandas Official Tutorial</a></mark><mark class="highlight-yellow"> </mark>-  Several Hours (self-paced)  
+Pandas is an important library when it comes to analyzing data with the help of python for data science. Mastering pandas and their features are very important.</li></ul><ul id="f6e55cc0-b4ff-4e0d-b7e3-e5c082f296b4" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.youtube.com/watch?v=vmEHCJofslg">Pandas</a></mark> -11 Hour 
+This video is a complete package but I do recommend using the official tutorial first then using this video as a refresher.
+</li></ul><p id="4e2ef9ef-15d0-4d5c-a769-2bd41cbe0f84" class=""><strong>These videos and links will hardly take 3-4 hours to complete so why 10 Days…? The thing with python libraries, in general, is that one needs to practice by themselves without the help of any tutorials. Below you will find a list of exercises in python to get started with handling data in python.
+</strong></p><ul id="b1d53f71-2efc-4a41-9a2c-eba80ed97e91" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.kaggle.com/learn/pandas">Pandas with Kaggle</a></mark> - 4 Hours  
+One of the best thing about Kaggle courses is that they make sure whatever they share is focused on data science. So you don’t need to worry about drifting away from the topic.
+
+</li></ul><h2 id="90d9fe60-b347-48a5-a48c-5f7875bd2552" class="">🗓 Schedule</h2><div id="99860154-0a1e-43f9-bcfa-08090e9f31e0" class="collection-content"><h4 class="collection-title"></h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Day/Days</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Hours</th></tr></thead><tbody><tr id="6fc09497-ef63-49e9-91c7-9e895964f9aa"><td class="cell-title"><a href="https://www.notion.so/26-27-6fc09497ef6349e991c79e895964f9aa">26-27</a></td><td class="cell-umiJ">Numpy Official Tutorial</td></tr><tr id="a1675e94-2cfb-44e4-8d4a-6d07ed8687a9"><td class="cell-title"><a href="https://www.notion.so/28-a1675e942cfb44e48d4a6d07ed8687a9">28</a></td><td class="cell-umiJ">Numpy for beginners</td></tr><tr id="3e140b28-e7a9-45ec-a5df-a306a3183d14"><td class="cell-title"><a href="https://www.notion.so/29-31-3e140b28e7a945eca5dfa306a3183d14">29-31</a></td><td class="cell-umiJ">Pandas Official Tutorial</td></tr><tr id="ac5a9458-6e1e-44ec-87ae-af4020c35694"><td class="cell-title"><a href="https://www.notion.so/32-ac5a94586e1e44ec87aeaf4020c35694">32</a></td><td class="cell-umiJ">Pandas 1</td></tr><tr id="721823c0-5a86-4511-9203-9038a59126e1"><td class="cell-title"><a href="https://www.notion.so/32-35-721823c05a86451192039038a59126e1">32-35</a></td><td class="cell-umiJ">Pandas with Kaggle</td></tr></tbody></table></div><p id="6da97783-074e-44d0-bffc-3129bd1a0411" class="">
+
+</p><h1 id="b27cf2e5-6b8a-4633-a81f-b26a2263abff" class="">✅  Day 36 TAKE A BREAK 😎 🙌🏼</h1><p id="7e0f914f-8692-43d8-ac38-727bd054dce6" class="">
+</p><p id="56089c6a-409a-4e5a-a38d-dcf94811281d" class=""><strong>If you feel 10 days is not enough for practising..Do not worry! Next 10 days all you’ll be doing is practising Data Cleaning and Feature engineering with the help of whatever you have learned so far. This will surely help you a lot. But there’s still a thing missing …. VISUALIZATIONS! That’s right. Sometimes a simple Viz tells us a lot about the data and we need it while data cleaning and feature engineering.
+
+
+</strong></p><p id="43526f6e-b9d5-46e8-ac19-cea0ffc5f309" class="">
+</p><h1 id="defe4cdc-9f19-4f12-9bea-5ca9f7014600" class="">✅ Day 37 to 42 - Data Visualizations</h1><p id="0fd7f2c0-4e03-44e3-9ec4-62f7fefdebeb" class="">
+</p><p id="82313184-c394-4c9a-84f0-861cd9687d0f" class="">There are abundant viz libraries out there, but to dive into the world of viz, starting with “matplotlib” and “seaborn” is a must.</p><ul id="c5b5f745-ca6c-4ecb-8d37-6f4b11e41e99" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.youtube.com/watch?v=GPVsHOlRBBI&amp;t=19560s">Data Viz with Matplotlib, Seaborn and Pandas(Bonus)</a></mark><mark class="highlight-yellow"> </mark>- 2 Hours 
+This is another great video from freecodecamp and it starts from the middle of a 9 Hour long video, where we focus only on plotting with pandas and data viz with matplot and seaborn.</li></ul><ul id="5915b192-2ac9-4431-83c2-224f005df3f6" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.kaggle.com/learn/data-visualization">Data Viz with Kaggle</a></mark><mark class="highlight-yellow"> </mark>- 4 Hours 
+Now is the time to put the things you learned to the test. Exercises should get your concepts clear. What are you waiting for? Let’s get started!</li></ul><ul id="3ab12f8a-5610-4001-9ab4-4d6d6d8fbd32" class="bulleted-list"><li>Research a little on your own.. 
+Now this “do it by your own” you would not find much of it here but there are so so many exercises online for free … Try it, Play with Datasets, Explore a little. Visualize!</li></ul><p id="d6490f66-ccb8-42c1-802a-403b4acc168c" class="">
+</p><h2 id="1c65d0d1-86ca-4179-854c-76f4f2be4391" class="">🗓 Schedule</h2><div id="d6454c0b-f3ea-4428-a505-75ccb30f0750" class="collection-content"><h4 class="collection-title"></h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Day/Days</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Hours</th></tr></thead><tbody><tr id="f2a65dbe-ae1a-465b-b643-88f8b89920c0"><td class="cell-title"><a href="https://www.notion.so/37-f2a65dbeae1a465bb64388f8b89920c0">37</a></td><td class="cell-DIQH">Data Viz with Matplotlib etc</td></tr><tr id="42a4a4cd-fb0f-494e-845d-c662b2833eb9"><td class="cell-title"><a href="https://www.notion.so/41-42-42a4a4cdfb0f494e845dc662b2833eb9">41-42</a></td><td class="cell-DIQH">Data Viz with Kaggle</td></tr></tbody></table></div><p id="06a2d7d5-5590-4c0c-84e9-51fab59b6f8a" class="">
+
+</p><p id="00706890-2bb1-4083-a0cf-d26472b3d8c2" class="">
+</p><h1 id="02a9f7f2-88bc-4d49-8a1a-ebb38455f0c9" class="">✅  Day 43 to 52 - Feature Engineering and Data Cleaning</h1><p id="efa94285-8695-419e-b542-6d74df343d3d" class="">
+</p><p id="3dbb5b31-0bdf-40b7-a82a-01c769e5f672" class="">Features found in data play a crucial role and directly influence the predictive models and the results that we need.</p><p id="33d23231-76d5-4cb6-a32c-cbff0064755e" class="">Here is the link for an article that should help you understand the importance. <a href="https://machinelearningmastery.com/discover-feature-engineering-how-to-engineer-features-and-how-to-get-good-at-it/">Click here</a></p><ul id="a8ef9ff4-a04f-4ec4-90eb-6972e32d39b6" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.kaggle.com/learn/feature-engineering">Feature Engineering Kaggle</a></mark> - 6 to 8 hours</li></ul><ul id="b3d46d05-3123-42ba-896a-6f4db65622a6" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.kaggle.com/learn/data-cleaning">Data Cleaning Kaggle</a></mark> - 4 to 6 hours</li></ul><ul id="40d2b621-9138-4e39-a422-8f6fd55a815c" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.youtube.com/playlist?list=PLZoTAELRMXVPwYGE2PXD3x0bfKnR0cJjN">Feature Engineering by Krish Naik</a></mark> - 12 to 14 hours
+</li></ul><h2 id="1d962132-6bc8-4e19-b2af-16b45e83be56" class="">🗓 Schedule</h2><div id="b91ed5f4-7a57-4fbb-aca0-4802b2dc160e" class="collection-content"><h4 class="collection-title"></h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Day/Days</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Hours</th></tr></thead><tbody><tr id="aab0bfaf-b729-45a4-9803-5f7d2a4f5413"><td class="cell-title"><a href="https://www.notion.so/43-46-aab0bfafb72945a498035f7d2a4f5413">43-46</a></td><td class="cell-DZq?">Kaggle- Feature Engineering</td></tr><tr id="409374c1-bde3-4198-b43e-ab296f2dc2ca"><td class="cell-title"><a href="https://www.notion.so/47-48-409374c1bde34198b43eab296f2dc2ca">47-48</a></td><td class="cell-DZq?">Data Cleaning Kaggle</td></tr><tr id="c7a4b6b0-f6c2-4d9c-912d-d64472529777"><td class="cell-title"><a href="https://www.notion.so/49-52-c7a4b6b0f6c24d9c912dd64472529777">49-52</a></td><td class="cell-DZq?">Feature Engineering Youtube</td></tr></tbody></table></div><p id="a8100fa6-4b17-4e17-9ff3-784b14d4c393" class="">
+</p><p id="16f83ec3-c26e-4d80-bbbd-0bf431f8f26e" class="">
+</p><p id="7ffdf1f8-5b1b-490a-ab2e-4a697b533609" class="">
+</p><h1 id="b87b4a07-4e5d-4f19-b5fc-8fb1c2b8a1cf" class="">✅  Day 53 to 66 - Machine Learning</h1><p id="adca8601-c987-4979-8704-3e87589c1be7" class="">
+</p><p id="d9af2ec3-b604-46da-8f95-7c04fca3a7bb" class="">Now for machine learning, there are “TONS” of courses there.. Literally! But after my experience with it and doing tons of courses (both paid and unpaid), Here’s a few I found that turned out to be even better than the paid ones.</p><p id="71831cc3-c4a3-4dac-915e-01a67abd1d0f" class="">
+</p><ul id="c1a55193-8326-46ca-856d-6ff8937a8dac" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.kaggle.com/learn/intro-to-machine-learning">Intro into Machine Learning with Kaggle</a></mark><mark class="highlight-yellow"> </mark>- 3 Hours</li></ul><ul id="e3b851aa-0655-48fa-930d-d46d13932b1d" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://developers.google.com/machine-learning/crash-course">Machine learning CrashCourse by Google</a></mark> - 15 Hours 
+
+This course is one of the best ones out there for the ones learning by themselves. It has practice questions, real-world problems and viz’s. Lectures from Google’s researcher. 
+This is not just machine learning it also covers -&gt;<ul id="adc7ab10-e86a-4472-b5ac-9cdd8d93c69b" class="bulleted-list"><li>Problem Framing - 1 Hour</li></ul><ul id="d518f39c-d9f5-4080-80a5-7979463b79ef" class="bulleted-list"><li>Data Prep - 1.5 Hours</li></ul><ul id="83abc683-ca75-4ddf-b720-85857c32c72d" class="bulleted-list"><li>Clustering - 4 Hours</li></ul><ul id="7ebb7f59-e86e-4038-87e7-69143cbb089b" class="bulleted-list"><li>Recommendation - 4 Hours</li></ul><ul id="383e5cea-2b1e-439e-9ab6-3c772f5a2644" class="bulleted-list"><li>Testing and debug - 4 Hours
+</li></ul><figure id="eb4a0b26-0052-4d11-bd0a-f4f74f0c3b96" class="image"><a href="#100daysofDataScience%207399e33c954449ea9c1868197a33270f/Screenshot_2021-05-13_at_2.07.08_PM.png"><img style="width:2842px" src="Screenshot_2021-05-13_at_2.07.08_PM.png"/></a></figure><p id="0885f8bf-e4f4-43d9-ad06-1ed81c26ce44" class="">
+</p></li></ul><ul id="0c201fa3-1427-49b1-b042-6b167042c2ef" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.kaggle.com/learn/intermediate-machine-learning">Intermediate Machine learning with Kaggle</a></mark> - 4 Hours 
+If you haven’t completed google’s course yet, I recommend that you complete that course first then jump onto Kaggle’s Course.</li></ul><ul id="3f0e16e0-d1cd-46f4-8c6e-8d7676b7d38e" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.youtube.com/watch?v=pqNCD_5r0IU">Scikit-Learn Course - ML with python</a></mark><mark class="highlight-yellow"> </mark>- 2 Hours
+</li></ul><p id="9f86236f-3ab5-4322-9267-050abc1ad5be" class="">Now folks, do remember that we are doing this in 20 days. Now mastering this in 20 days is obviously not possible. But these two courses alone should help you understand the very basics of machine learning from scratch and especially Google’s course to understand the real-world applications and dive into the world of API’s because data science is not just done in jyputer notebooks.</p><p id="0bf76637-c7b9-4ba9-8eb7-93884c67a3e6" class=""><strong>The best resource out there for free is “Freecodecamp’s” course on machine learning which is like a specialization of whopping 300 Hours.</strong> Dedicating 2 hours every day..? Thats 150 days alone for machine learning.</p><p id="e7858866-c2c9-4b3e-971c-88187d46bf69" class="">
+</p><p id="d347c2ec-99f1-4fef-884f-7f8d08b6d86f" class="">
+</p><h2 id="e9e84ff3-d341-4d29-878e-94aba5310f28" class="">🗓 Schedule</h2><div id="8ef5068a-3bc3-4921-8521-5c08f0fbd19c" class="collection-content"><h4 class="collection-title"></h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Day/Days</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Hours</th></tr></thead><tbody><tr id="8afce641-b450-46e9-bcd2-cd11d1630aa8"><td class="cell-title"><a href="https://www.notion.so/53-8afce641b45046e9bcd2cd11d1630aa8">53</a></td><td class="cell-[;m?">Intro into Machine Learning</td></tr><tr id="60156759-b5a1-4eae-aa27-5b4868174bdd"><td class="cell-title"><a href="https://www.notion.so/54-60-60156759b5a14eaeaa275b4868174bdd">54-60</a></td><td class="cell-[;m?">ML CrashCourse by Google</td></tr><tr id="357bbbb1-2e23-4c03-be0c-5c8d88ecf865"><td class="cell-title"><a href="https://www.notion.so/61-357bbbb12e234c03be0c5c8d88ecf865">61</a></td><td class="cell-[;m?">Problem Framing and Data Prep</td></tr><tr id="8083cd16-c562-4199-9b21-66094315be91"><td class="cell-title"><a href="https://www.notion.so/62-8083cd16c56241999b2166094315be91">62</a></td><td class="cell-[;m?">Clustering</td></tr><tr id="10c9e38d-ce47-4419-83fb-434efd458c5f"><td class="cell-title"><a href="https://www.notion.so/63-10c9e38dce47441983fb434efd458c5f">63</a></td><td class="cell-[;m?">Recommendation Systems</td></tr><tr id="99cd6413-6ab8-4535-971a-e0d2f1e4a0b7"><td class="cell-title"><a href="https://www.notion.so/64-99cd64136ab84535971ae0d2f1e4a0b7">64</a></td><td class="cell-[;m?">Testing and Debug</td></tr><tr id="ccd70808-7fb0-4d31-8e77-9ce204939a73"><td class="cell-title"><a href="https://www.notion.so/65-ccd708087fb04d318e779ce204939a73">65</a></td><td class="cell-[;m?">Kaggle ML</td></tr><tr id="449684ad-ed91-4fa4-8f08-5a3748f31728"><td class="cell-title"><a href="https://www.notion.so/66-449684aded914fa48f085a3748f31728">66</a></td><td class="cell-[;m?">Scikit-Learn Course - ML</td></tr></tbody></table></div><p id="a4596376-8517-4581-b10e-648eca819e2e" class="">
+</p><p id="5cb3dee3-fc5b-4987-9077-3bec29fa066c" class="">
+</p><h1 id="d471705e-0152-4a5e-9c47-9781c4966987" class="">✅  Day 67 to 70 - Machine Learning Challenges</h1><p id="c391be33-3534-4efa-abb4-c9809673a4ca" class="">
+</p><p id="a1d97b56-0f54-49d6-9e11-ad4511bf8b73" class="">Spending good 5 days to solve machine learning challenges is a great way to start. I would recommend starting with Kaggle’s Titanic dataset. There are so many great notebooks using various algorithms. I would even recommend glancing thru my notebook on the dataset featuring almost all machine learning algorithms and their comparison.</p><ul id="edea59b7-070a-47a6-a4b6-9056fc1a4d08" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.kaggle.com/c/titanic">Titanic Overview - Kaggle</a></mark></li></ul><ul id="0185a868-3b7e-4094-aad8-a2e79c64e38f" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.kaggle.com/utkarshxy/titanic-all-algorithms-comparison#Finally!-Models.....">My notebook- All algorithms</a></mark></li></ul><ul id="eee9f89a-395c-4cc2-a105-4fe855ba292b" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.kaggle.com/startupsci/titanic-data-science-solutions">Titanic Solving</a></mark></li></ul><ul id="af8dbc06-14cd-4d41-a684-7a1ac862904c" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://medium.com/coders-camp/180-data-science-and-machine-learning-projects-with-python-6191bc7b9db9">180 Ml Problems</a></mark></li></ul><p id="0d3f2bad-4e24-42ec-a524-0873f9362d31" class="">
+</p><h2 id="068ddf27-de18-4317-9e23-71340b43e08e" class="">🗓 Schedule</h2><div id="e7509e33-7d30-445a-8c41-75976ab9ffcb" class="collection-content"><h4 class="collection-title"></h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Day/Days</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Hours</th></tr></thead><tbody><tr id="40a8411b-e262-4b6d-b2c3-62a50445c76e"><td class="cell-title"><a href="https://www.notion.so/67-68-40a8411be2624b6db2c362a50445c76e">67-68</a></td><td class="cell-vsz:">Titanic ✅</td></tr><tr id="19d0b77e-bc02-4d26-bf36-5a470530cc30"><td class="cell-title"><a href="https://www.notion.so/69-70-19d0b77ebc024d26bf365a470530cc30">69-70</a></td><td class="cell-vsz:">Various Problems</td></tr></tbody></table></div><p id="44d10e00-4c26-4256-83ca-9edb818ef7b7" class="">
+</p><p id="53a904b2-8f95-49da-a754-689f86600eb3" class="">
+
+</p><h1 id="a2439cf9-6ad0-46aa-b014-659cd2001fa1" class="">✅  Day 71 to 80 - Complete Deep Learning</h1><p id="eab02683-d906-40f5-b89f-c264d9a190b5" class="">
+</p><p id="d32427a9-7b43-42c3-b98d-80e727daa5d8" class="">Last few days…. No time to waste. Let’s get right to it. ### Also if you have reached this far….First of all congrats on reaching day 70. If you’ve been following the only rule that was there our team will now start looking at your daily updates for what you have done. There’s a surprise at the end. Wait for it.😉</p><p id="805bca1f-e1c4-41fc-aeae-ff2a98f6d3c7" class="">
+</p><ul id="3614cdaa-6712-4731-8d27-744a37222c7e" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.youtube.com/watch?v=VyWAvY2CF9c&amp;t=57s">Deep learning intro</a></mark><mark class="highlight-yellow"> </mark>- 1.5 Hours 
+This 1 and half hour of deep learning crash course covers almost everything you need to know to get started with deep learning.</li></ul><ul id="6176c170-0ea9-4006-a1f3-469ceea821e0" class="bulleted-list"><li>Deep learning 5 Courses by Andrew Ng - 5 to 6 Hours  
+If you have been in the game of Data Science you might’ve heard his name before and about “deeplearning-ai” Now, their course is not free but their complete course videos on youtube are.<ul id="005b09ee-8fbd-498b-947e-6fbe4c8e351b" class="block-color-yellow bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.youtube.com/watch?v=CS4cs9xVecg&amp;list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky0">Course 1: Neural Networks and Deep Learning</a></mark></li></ul><ul id="371a3ba5-c58f-4dea-93b0-287cd254763e" class="block-color-yellow bulleted-list"><li><a href="https://www.youtube.com/watch?v=1waHlpKiNyY&amp;list=PLkDaE6sCZn6Hn0vK8co82zjQtt3T2Nkqc">Course 2: Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization</a></li></ul><ul id="9dee0e32-d27c-472e-80fc-f9f1f48371f5" class="block-color-yellow bulleted-list"><li><a href="https://www.youtube.com/watch?v=dFX8k1kXhOw&amp;list=PLkDaE6sCZn6E7jZ9sN_xHwSHOdjUxUW_b">Course 3: Structuring Machine Learning Projects</a></li></ul><ul id="f3b35f90-41f1-44e6-a3f9-eb0d6a5c0d99" class="block-color-yellow bulleted-list"><li><a href="https://www.youtube.com/watch?v=ArPaAX_PhIs&amp;list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF">Course 4: Convolutional Neural Networks</a></li></ul><ul id="2c837e91-c51c-49c5-8055-8848cb541ac3" class="block-color-yellow bulleted-list"><li><a href="https://www.youtube.com/watch?v=_i3aqgKVNQI&amp;list=PLkDaE6sCZn6F6wUI9tvS_Gw1vaFAx6rd6">Course 5: Sequence Models</a></li></ul><p id="4ac804d2-ea7e-445d-b95d-2c5f9764394f" class="">
+</p></li></ul><ul id="75efae2d-f843-489d-a207-5359af1f16a8" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://github.com/kmario23/deep-learning-drizzle">Collection of deep learning resources</a></mark> - This repo is one of the best collection of resources from links to lectures from Stanford to NYY TO IIT. It’s great literally. I would suggest you to download the repo itself just in case it is ever taken down.</li></ul><p id="227e8141-b422-46da-8460-0d41ec12cbbf" class="">
+</p><h2 id="e1371e5d-be73-4189-ae16-ca1e35648f96" class="">🗓 Schedule</h2><div id="0c25cf11-e189-4a9d-bb4c-40bbaddbfa7d" class="collection-content"><h4 class="collection-title"></h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Day/Days</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Hours</th></tr></thead><tbody><tr id="ef15052e-2405-4a7a-a5c3-d8fda5d8cdb0"><td class="cell-title"><a href="https://www.notion.so/71-73-ef15052e24054a7aa5c3d8fda5d8cdb0">71-73</a></td><td class="cell-|?mb">Deep learning intro</td></tr><tr id="c30c2d52-206b-4354-8e35-a0eaf9a87d39"><td class="cell-title"><a href="https://www.notion.so/74-80-c30c2d52206b43548e35a0eaf9a87d39">74-80</a></td><td class="cell-|?mb">Deep learning 5 Courses</td></tr></tbody></table></div><p id="3fd68047-1489-4946-9852-0dd18a992a91" class="">
+
+</p><p id="22502b51-764b-4b95-b5c7-1bf3b245d7c8" class="">
+</p><h1 id="b584e6ae-7d6b-4edd-9fab-1fa1a8d1fa30" class="">✅  Day 81 to 100 - Deployment and Understanding Pipelines</h1><p id="02f45fca-c0e0-4c25-a48a-3f0297c6df5e" class="">
+</p><p id="9993889d-529a-4061-b59f-8aa9e3048c9f" class="">Now that you understand almost everything and why do we need models and you can predict stuff. But always remember Data-Science is more than just jyputer notebooks…. And deploying your models where you solve a real world problem is a skill set that is very much in demand and now also a necessity.</p><p id="723ee43e-8b59-4be3-8384-55f1848109f7" class="">Before diving into deployment let’s talk a little about <strong>data pipelines</strong>. - Here’s an <mark class="highlight-yellow"><a href="https://www.geeksforgeeks.org/whats-data-science-pipeline/">article</a></mark> from geeksforgeeks that neatly explains the whole concept.</p><p id="6748cefa-c48c-478e-a239-df7fdaef457f" class="">
+</p><ul id="ee8e876e-27a2-413f-abe5-2fadce912f46" class="bulleted-list"><li>Here’s a <mark class="highlight-yellow"><a href="https://www.youtube.com/watch?v=w9IGkBfOoic">video</a></mark> that also talks about how to create pipelines using Sklearn. Yes! There are multiple ways of creating pipelines.</li></ul><ul id="f328a038-7bee-406f-929b-5971ac67d08c" class="bulleted-list"><li>If this 👆🏼 does not get anything in your head then I have a few more videos…WE got you covered! <mark class="highlight-yellow"><a href="https://www.youtube.com/watch?v=CApCQKuWqBM&amp;t=3503s">This video</a></mark> by CodingEntrepreneurs is a classic for understanding pipelines with the help of jyputer, pandas and FastAPI.</li></ul><ul id="055dcf0b-eb09-4639-9a82-9f3eba6a8317" class="bulleted-list"><li>Now, what are API’s… especially in the field of data science? <mark class="highlight-yellow"><a href="https://www.analyticsvidhya.com/blog/2016/11/an-introduction-to-apis-application-programming-interfaces-5-apis-a-data-scientist-must-know/">Here</a></mark>.
+</li></ul><p id="1a9b7932-5f80-4c54-a95c-c6b8acc55485" class="">Once you are done with all those. Let’s get back at deployment and look at some resources that can help us with deployment. Do remember, there are multiple deployment platforms and the process is not that different, its almost identical except for a few changes in steps here and there depending on the platform of choice.
+</p><ul id="a6b54798-5903-4dfa-9cc1-59e53b11e0d8" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.youtube.com/watch?v=p_tpQSY1aTs&amp;t=11s">End to end Ml model deployment - Car prices</a></mark> - 1.5 Hours 
+This is again a great video by Krish. Its’ clean, simple and beginner-friendly.</li></ul><ul id="f819d297-dac0-48ab-be89-8be09e14f40f" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.youtube.com/watch?v=fw6NMQrYc6w&amp;t=3816s">Ml deployment in Google Cloud</a></mark><mark class="highlight-yellow"> </mark>
+This might be a little difficult to understand by being familiar with cloud services and deployment of either Google, Amazon or Microsoft is always a plus.
+</li></ul><p id="f5b650fe-461d-4e2a-bbc3-bfbb12c7d61b" class=""><strong>Other ways of deployment -&gt;</strong></p><ul id="d51b0109-fc5c-40b7-97c5-2eb68af0ffb3" class="bulleted-list"><li><mark class="highlight-yellow"><a href="https://www.youtube.com/watch?v=mrExsjcvF4o&amp;t=1s">Deploy Machine Learning Model using Flask</a></mark><mark class="highlight-yellow"> 
+</mark>Flask can also be used to deploy models using products like Heroku and Docker. There are plenty of resources out there. Our main focus was to get you familiar with Deployments, API’s and Pipelines.
+</li></ul><h3 id="86633915-eb9d-4e9e-b931-3bed1844aabd" class="">✅ Automated Data Pipeline playlist by Kaggle</h3><p id="f66682b7-da6f-4809-8aa9-71c808f494e3" class="">This is optional but I personally recommend this. This playlist should clear most of the doubts, If any. Here’s the <mark class="highlight-yellow"><a href="https://www.youtube.com/playlist?list=PLqFaTIg4myu_SCTjwX3pfgGNjQJNJbUzT">Link</a></mark></p><p id="d12a60d0-2343-4173-9213-5fcf61891b2a" class="">
+</p><h2 id="87aa0605-f7ab-4fa8-ba62-0dc9237d0f26" class="">🗓Schedule</h2><div id="9b46db7c-bb1e-4d14-ae69-889222cf928f" class="collection-content"><h4 class="collection-title"></h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Day/Days</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Hours</th></tr></thead><tbody><tr id="c20e3164-0992-40f6-b2f5-22743077c082"><td class="cell-title"><a href="https://www.notion.so/81-c20e3164099240f6b2f522743077c082">81</a></td><td class="cell-zMRL">Geek’s Article and Sklearn video</td></tr><tr id="02762d61-ab4d-4f6e-bc22-9650ef33af73"><td class="cell-title"><a href="https://www.notion.so/82-02762d61ab4d4f6ebc229650ef33af73">82</a></td><td class="cell-zMRL">CodingEntrepreneurs ’s video, Api article</td></tr><tr id="a1298932-da30-43d5-beef-d63ab7af2235"><td class="cell-title"><a href="https://www.notion.so/83-a1298932da3043d5beefd63ab7af2235">83</a></td><td class="cell-zMRL">End to end Ml model deployment - Car prices</td></tr><tr id="4ed4597c-b5cf-4a18-b983-29347318236e"><td class="cell-title"><a href="https://www.notion.so/84-4ed4597cb5cf4a18b98329347318236e">84</a></td><td class="cell-zMRL">Ml deployment in Google Cloud</td></tr><tr id="ca0c12bc-8aef-4037-9482-def26248c7f0"><td class="cell-title"><a href="https://www.notion.so/85-ca0c12bc8aef40379482def26248c7f0">85</a></td><td class="cell-zMRL">Deploy Machine Learning Model using Flask</td></tr><tr id="c450acb2-88c5-4562-9c59-6a37d1486626"><td class="cell-title"><a href="https://www.notion.so/86-90-c450acb288c545629c596a37d1486626">86-90</a></td><td class="cell-zMRL">Data Pipeline playlist by Kaggle</td></tr></tbody></table></div><h3 id="72b714ae-5946-4b79-89f1-06c083eb761d" class="block-color-blue_background"><strong>Use the remaining days for completing any pending topics if any or the topics that you had to rush through because of time crunch Or get started with Kaggle Competitions!</strong></h3><p id="5c248af6-5be2-43e2-9a9d-0228498448cf" class="">
+</p><p id="31d3b7ef-8364-4ad8-a5d5-c7b6adcf585d" class="">
+</p><p id="969f7175-04e8-4c8d-93e3-e583eeff6e50" class="">
+</p><p id="27a11c57-5d41-4be3-a770-b89b0455eaf1" class="">
+</p><h2 id="bbd4bf04-31b2-4d5c-8593-74c8b8cd3a4f" class="">A little Message.
+</h2><p id="85c89792-b4f2-4d3d-b25a-9e7b79b3a927" class="">Hey Folks! The100! Thanks for being among the first ones to contribute to our journey and letting us be a part of yours.</p><p id="379676e0-e6c4-47a0-9c63-cd1d4dbbd614" class=""><strong>Heartfelt thanks ❤️ If you have stayed with us for 100days. We love your dedication and thanks for being a contributor to our mission: “Democratizing free learning”.</strong></p><p id="73284fa5-a04d-4875-bebf-7d2f98235f3f" class=""><strong>We will soon be setting up a form for your details and so that we can send you a cool certificate for your dedication, commitment and hard work throughout.
+</strong></p><p id="946b304c-d407-43fa-bb01-6c06f96607de" class="">Utkarsh 
+Founder 100days</p><h1 id="07368b9c-51a5-49cb-936f-b9658f3a7eea" class=""></h1></div></article></body></html>
